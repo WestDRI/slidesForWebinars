@@ -1,0 +1,33 @@
+baseURL = "http://example.org/"
+languageCode = "en"
+title = "WestGrid Webinars"
+theme = "reveal-hugo"
+relativeURLs = true
+uglyURLs = true
+
+[outputFormats.Reveal]
+baseName = "index"
+mediaType = "text/html"
+isHTML = true
+
+[params.reveal_hugo]
+load_default_plugins = false
+plugins = [
+  "reveal-js/plugin/zoom-js/zoom.js",
+  "reveal-js/plugin/notes/notes.js",
+]
+slide_number = true
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "fruity"
+    # style = "rrt"
+    tabWidth = 4
+
+pygmentsCodefencesGuessSyntax = true
