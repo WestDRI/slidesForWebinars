@@ -1,5 +1,5 @@
 +++
-title = "machinelearning_with_flux"
+title = "hpc_julia"
 outputs = ["Reveal"]
 [logowg]
 src = "/img/wg_white_removed_medium.png"
@@ -12,11 +12,22 @@ custom_theme = "mh.scss"
 custom_theme_compile = true
 +++
 
-# 
+# High-Performance Computing with Julia
 
 ## Marie-Helene Burle
 
 ### marie.burle@westgrid.ca
 
 ---
+
+# 
+
+
+- built-in multiple-dispatch
+- optional type declaration
+- very clean, compact, and simple syntax
+  - string interpolation
+  - assignment form of function definition
+
+Benchmarking
 
