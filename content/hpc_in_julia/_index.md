@@ -2,10 +2,10 @@
 title = "hpc_in_julia"
 outputs = ["Reveal"]
 [logowg]
-src = "/images/wg_white_removed_medium.png"
+src = "/img/wg_white_removed_medium.png"
 alt = "WestGrid logo"
 [logocc]
-src = "/images/cc_regional_partner.png"
+src = "/img/cc_regional_partner_brown_large.png"
 alt = "Compute Canada logo"
 [reveal_hugo]
 custom_theme = "mh.scss"
