@@ -1,12 +1,68 @@
+<!-- Make the logo disappear on slide 4 (title slide is 0) -->
+<!-- <script type="text/javascript"> -->
+<!--   Reveal.addEventListener('slidechanged', function(event) { -->
+<!--       if (event.indexh == 3) { -->
+<!-- 	  document.getElementById('logowg').style.display='block' -->
+<!-- 	  document.getElementById('logocc').style.display='block' -->
+<!--       } -->
+<!--       if (event.indexh == 4) { -->
+<!-- 	  document.getElementById('logowg').style.display='none' -->
+<!-- 	  document.getElementById('logocc').style.display='none' -->
+<!--       } -->
+<!--       if (event.indexh == 5) { -->
+<!-- 	  document.getElementById('logowg').style.display='block' -->
+<!-- 	  document.getElementById('logocc').style.display='block' -->
+<!--       } -->
+<!--   }); -->
+<!-- </script> -->
+
+<!-- Make the logo smaller from slide 1 onward -->
+<script type="text/javascript">
+  Reveal.addEventListener('slidechanged', function(event) {
+      if (event.indexh == 0) {
+	  document.getElementById('logowg').style.width='250px'
+	  document.getElementById('logocc').style.top='77px'
+	  document.getElementById('logocc').style.left='105px'
+	  document.getElementById('logocc').style.width='160px'
+      }
+      if (event.indexh == 1) {
+	  document.getElementById('logowg').style.width='150px'
+	  document.getElementById('logocc').style.top='53px'
+	  document.getElementById('logocc').style.left='70px'
+	  document.getElementById('logocc').style.width='96px'
+      }
+  });
+</script>
+
 <img id="logowg" src="{{ .Param "logowg.src" }}" alt="{{ .Param "logowg.alt" }}">
 <style>
   #logowg {
     position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 230px;
+    top: 15px;
+    left: 15px;
+    width: 250px;
   }
 </style>
+
+<img id="logocc" src="{{ .Param "logocc.src" }}" alt="{{ .Param "logocc.alt" }}">
+<style>
+  #logocc {
+    position: absolute;
+    top: 77px;
+    left: 105px;
+    width: 160px;
+  }
+</style>
+
+<!-- <img id="logowg" src="{{ .Param "logowg.src" }}" alt="{{ .Param "logowg.alt" }}"> -->
+<!-- <style> -->
+<!--   #logowg { -->
+<!--     position: absolute; -->
+<!--     top: 20px; -->
+<!--     left: 20px; -->
+<!--     width: 230px; -->
+<!--   } -->
+<!-- </style> -->
 
 <!-- <img id="logocc" src="{{ .Param "logocc.src" }}" alt="{{ .Param "logocc.alt" }}"> -->
 <!-- <style> -->
@@ -18,12 +74,14 @@
 <!--   } -->
 <!-- </style> -->
 
-<img id="logocc" src="{{ .Param "logocc.src" }}" alt="{{ .Param "logocc.alt" }}">
-<style>
-  #logocc {
-    position: absolute;
-    top: 20px;
-    left: 250px;
-    width: 200px;
-  }
-</style>
+<!-- <img id="logocc" src="{{ .Param "logocc.src" }}" alt="{{ .Param "logocc.alt" }}"> -->
+<!-- <style> -->
+<!--   #logocc { -->
+<!--     position: absolute; -->
+<!--     top: 75px; -->
+<!--     left: 100px; -->
+<!--     width: 170px; -->
+<!--   } -->
+<!-- </style> -->
+
+<div id="rectangle"></div>
