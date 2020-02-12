@@ -1,0 +1,51 @@
+// Base settings for all themes that can optionally be
+// overridden by the super-theme
+
+// Background of the presentation
+$backgroundColor: #fffaf6;
+
+// Primary/body text
+$mainFont: 'Ibarra Real Nova', serif;
+$mainFontSize: 35px;
+$mainColor: #272a2a;
+
+// Vertical spacing between blocks of text
+$blockMargin: 20px;
+
+// Headings
+$headingMargin: 0 0 $blockMargin 0;
+$headingFont: 'Ibarra Real Nova', serif;
+$heading1Color: #383D3D;
+$heading2Color: #000;
+$heading3Color: #584f1e;
+$heading4Color: #426456;
+$heading5Color: #644f67;
+$heading6Color: #b43c3e;
+$headingLineHeight: 1.2;
+$headingLetterSpacing: normal;
+$headingTextTransform: none;
+// $headingTextTransform: uppercase;
+$headingTextShadow: none;
+$headingFontWeight: normal;
+$heading1TextShadow: $headingTextShadow;
+
+$heading1Size: 3.2rem;
+$heading2Size: 1.9rem;
+$heading3Size: 1.3rem;
+$heading4Size: 1.1rem;
+$heading5Size: 1.0rem;
+$heading6Size: 0.9rem;
+
+// Links and actions
+$linkColor: #336699;
+$linkColorHover: lighten( $linkColor, 20% );
+
+// Text selection
+$selectionBackgroundColor: #26351C;
+$selectionColor: #fff;
+
+// Generates the presentation background, can be overridden
+// to return a background image or gradient
+@mixin bodyBackground() {
+	background: $backgroundColor;
+}
