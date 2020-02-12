@@ -309,5 +309,6 @@ https://github.com/dylanaraps/fff
 
 ---
 
-tig
-
+https://github.com/jonas/tig
+https://github.com/BurntSushi/ripgrep
+https://github.com/ggreer/the_silver_searcher
