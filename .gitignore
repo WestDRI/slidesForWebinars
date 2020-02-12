@@ -1,8 +1,8 @@
-public
-resources
-archetypes
-!wg_white_removed_medium.png
-!cc_regional_partner_brown_large.png
-!fzf.png
+public/
+resources/
 !autojump.png
+!cc_regional_partner_brown_large.png
+!favicon.png
+!fzf.png
 !ranger.png
+!wg_white_removed_medium.png
