@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "/"
 languageCode = "en"
 title = "WestGrid Webinars"
 theme = "reveal-hugo"
@@ -25,6 +25,9 @@ uglyURLs = true
   transition = 'none'
   background_transition = 'none'
 
+[params]
+  favicon_32 = "/img/favicon.png"
+  
 [markup]
   defaultMarkdownHandler = "blackfriday"
   [markup.highlight]
