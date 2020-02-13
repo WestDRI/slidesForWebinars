@@ -19,7 +19,7 @@ custom_theme_compile = true
 
 <!-- ![logo](/img/terminal.png) -->
 
-![](/img/2020-02-12_18:44:24.png)
+![](/img/cli_title.png)
 
 #### Marie-Hélène Burle
 
