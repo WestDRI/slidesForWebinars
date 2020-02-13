@@ -12,17 +12,20 @@ custom_theme = "mh.scss"
 custom_theme_compile = true
 +++
 
-&nbsp;
+<br>
+<br>
 
-## Fun tools to make your life in the command line easier
+<!-- # Fun tools to make your life in the command line easier -->
 
-&nbsp;
+<!-- ![logo](/img/terminal.png) -->
 
-### Marie-Hélène Burle
+![](/img/2020-02-12_18:44:24.png)
 
-#### marie.burle@westgrid.ca
+#### Marie-Hélène Burle
 
-##### *February 19, 2020*
+##### <marie.burle@westgrid.ca>
+
+###### *February 19, 2020*
 
 ---
 
