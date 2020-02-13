@@ -37,8 +37,11 @@ uglyURLs = true
     lineNos = false
     lineNumbersInTable = true
     noClasses = true
-    # style = "fruity"
-    style = "rrt"
+    # style = "manni"
+    # style = "native"
+    # style = "rainbow_dash"
+    # style = "trac"
+    style = "autumn"
     tabWidth = 4
 
 pygmentsCodefencesGuessSyntax = true
