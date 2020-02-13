@@ -21,31 +21,21 @@ custom_theme_compile = true
 
 ![](/img/cli_title.png)
 
-#### Marie-Hélène Burle
+#### <center>Marie-Hélène Burle</center>
 
-##### <marie.burle@westgrid.ca>
+##### <center><marie.burle@westgrid.ca></center>
 
-###### *February 19, 2020*
-
----
-
-<!-- {{< slide background-color="#fcf9e5" >}} -->
-
-# fzf
-
-## (fuzzy finder)
+###### <center>*February 19, 2020*</center>
 
 ---
 
-<!-- {{< slide background-color="#fcf9e5" >}} -->
+# <center>fzf: fuzzy finder</center>
 
-#### https://github.com/junegunn/fzf
+<br>
 
-#### ![alt fzf](/img/fzf.png)
+[![logo](/img/fzf.png)](https://github.com/junegunn/fzf)
 
 ---
-
-<!-- {{< slide background-color="#fcf9e5" >}} -->
 
 Many commands return long outputs
 
@@ -57,8 +47,6 @@ ps -ef
 ```
 
 ---
-
-<!-- {{< slide background-color="#fcf9e5" >}} -->
 
 ```sh
 UID          PID    PPID  C STIME TTY          TIME CMD
@@ -204,8 +192,6 @@ Depending on settings, the cli may not allow to scroll back to the line of inter
 
 ---
 
-<!-- {{< slide background-color="#fcf9e5" >}} -->
-
 Classic options to make this more friendly: `less`
 
 <br>
@@ -220,8 +206,6 @@ ps -ef | less
 
 ---
 
-<!-- {{< slide background-color="#fcf9e5" >}} -->
-
 But `fzf` allows much more
 
 <br>
@@ -230,8 +214,6 @@ ps -ef | fzf
 ```
 
 ---
-
-<!-- {{< slide background-color="#fcf9e5" >}} -->
 
 ```sh
 ih() {				# fzf history
@@ -274,35 +256,19 @@ alias kr='egrep "^map\ " $HOME/.config/ranger/rc.conf | fzf -i -e +s'
 
 ---
 
-<!-- {{< slide background-color="#eaeffa" >}} -->
+# <center>autojump: smart cd</center>
 
-# autojump
+<br>
 
-## (smart cd)
-
----
-
-<!-- {{< slide background-color="#eaeffa" >}} -->
-
-#### https://github.com/wting/autojump
-
-#### ![alt fzf](/img/autojump.png)
+[![logo](/img/autojump.png)](https://github.com/wting/autojump)
 
 ---
 
-<!-- {{< slide background-color="#eff5f5" >}} -->
+# <center>ranger: file manager</center>
 
-# ranger
+<br>
 
-## (file manager)
-
----
-
-<!-- {{< slide background-color="#eff5f5" >}} -->
-
-#### https://github.com/ranger/ranger
-
-#### ![alt fzf](/img/ranger.png)
+[![logo](/img/ranger.png)](https://github.com/ranger/ranger)
 
 ---
 
