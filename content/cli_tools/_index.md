@@ -240,9 +240,11 @@ ps -ef | fzf
 
 ---
 
-Let's get to a terminal:
+<br>
 
-
+<center>Let's go to a terminal:</center>
+<br>
+![logo](/img/cli.png)
 
 ---
 
