@@ -15,8 +15,8 @@ $blockMargin: 20px;
 // Headings
 $headingMargin: 0 0 $blockMargin 0;
 $headingFont: 'Ibarra Real Nova', serif;
-$heading1Color: #383D3D;
-$heading2Color: #000;
+$heading1Color: #000;
+$heading2Color: #383D3D;
 $heading3Color: #584f1e;
 $heading4Color: #426456;
 $heading5Color: #644f67;
@@ -29,12 +29,12 @@ $headingTextShadow: none;
 $headingFontWeight: normal;
 $heading1TextShadow: $headingTextShadow;
 
-$heading1Size: 3.2rem;
-$heading2Size: 1.9rem;
-$heading3Size: 1.3rem;
-$heading4Size: 1.1rem;
-$heading5Size: 1.0rem;
-$heading6Size: 0.9rem;
+$heading1Size: 4.0rem;
+$heading2Size: 3.5rem;
+$heading3Size: 3.0rem;
+$heading4Size: 2.5rem;
+$heading5Size: 2.0rem;
+$heading6Size: 1.5rem;
 
 // Links and actions
 $linkColor: #336699;
