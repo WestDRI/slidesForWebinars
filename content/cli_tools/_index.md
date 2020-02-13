@@ -37,7 +37,9 @@ custom_theme_compile = true
 
 ---
 
-Many commands return long outputs
+<center>Many commands return long outputs</center>
+
+---
 
 Example: get running processes
 
@@ -47,6 +49,8 @@ ps -ef
 ```
 
 ---
+
+<br>
 
 ```sh
 UID          PID    PPID  C STIME TTY          TIME CMD
@@ -185,28 +189,49 @@ root        1031       2  0 Jan06 ?        00:00:00 [krfcommd]
 marie       1066     860  0 Jan06 ?        00:00:00 /usr/lib/qt/libexec/QtWebEngineProcess --type=zygote --webengine-schemes=qute:lL;qrc:sLV --lang=en-CA
 marie       1068    1066  0 Jan06 ?        00:00:00 /usr/lib/qt/libexec/QtWebEngineProcess --type=zygote --webengine-schemes=qute:lL;qrc:sLV --lang=en-CA
 ```
-<br>
-It is not efficient to scroll up the command-line (cli) output
-
-Depending on settings, the cli may not allow to scroll back to the line of interest
+{{% fragment %}}
+Not very user friendly.\\
+Depending on settings, it might not even be possible to scroll up to the line of interest.
+{{% /fragment %}}
 
 ---
 
-Classic options to make this more friendly: `less`
+Classic tool to make this more friendly: `less`
 
 <br>
 ```sh
 ps -ef | less
 ```
-<br>
-{{% fragment %}} - Allows to view output one screen full at a time {{% /fragment %}}
-
-<br>
-{{% fragment %}} - Allows easy searching {{% /fragment %}}
 
 ---
 
-But `fzf` allows much more
+<br>
+<br>
+
+```sh
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 Jan06 ?        00:00:16 /sbin/init
+root           2       0  0 Jan06 ?        00:00:00 [kthreadd]
+root           3       2  0 Jan06 ?        00:00:00 [rcu_gp]
+root           4       2  0 Jan06 ?        00:00:00 [rcu_par_gp]
+root           6       2  0 Jan06 ?        00:00:00 [kworker/0:0H-kblockd]
+root           8       2  0 Jan06 ?        00:00:00 [mm_percpu_wq]
+root           9       2  0 Jan06 ?        00:00:00 [ksoftirqd/0]
+root          10       2  0 Jan06 ?        00:00:00 [rcuc/0]
+root          11       2  0 Jan06 ?        00:00:04 [rcu_preempt]
+root          12       2  0 Jan06 ?        00:00:00 [rcub/0]
+root          13       2  0 Jan06 ?        00:00:00 [migration/0]
+root          14       2  0 Jan06 ?        00:00:00 [idle_inject/0]
+:
+```
+
+{{% fragment %}} - allows to view output one screen at a time {{% /fragment %}}
+
+{{% fragment %}} - allows easy searching {{% /fragment %}}
+
+---
+
+But `fzf` allows much more:
 
 <br>
 ```sh
@@ -215,32 +240,55 @@ ps -ef | fzf
 
 ---
 
+Let's get to a terminal:
+
+
+
+---
+
 ```sh
 ih() {				# fzf history
-    print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf -i -e +s --tac | sed 's/ *[0-9]* *//')
+	print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) |
+					fzf -i -e +s --tac |
+					sed 's/ *[0-9]* *//')
 }
 ```
+
+---
 
 ```sh
 ik() {				# fzf kill process
-    local pid
-    if [ "$UID" != "0" ]; then
-	pid=$(ps -f -u $UID | sed 1d | fzf -i -e -m | awk '{print $2}')
-    else
-	pid=$(ps -ef | sed 1d | fzf -i -e -m | awk '{print $2}')
-    fi
+	local pid
+	if [ "$UID" != "0" ]; then
+		pid=$(ps -f -u $UID |
+				  sed 1d |
+				  fzf -i -e -m |
+				  awk '{print $2}')
+	else
+		pid=$(ps -ef |
+				  sed 1d |
+				  fzf -i -e -m |
+				  awk '{print $2}')
+	fi
 }
 ```
 
+---
+
 ```sh
 gcop() {			# git commit check with preview and copy hash
-    glNoGraph |	fzf -i -e --no-sort --reverse --tiebreak=index --no-multi \
-		            --ansi --preview="$_viewGitLogLine" \
-		            --header "enter: view, M-y: copy hash" \
-		            --bind "enter:execute:$_viewGitLogLine   | less -R" \
-		            --bind "alt-y:execute:$_gitLogLineToHash | xclip -r -selection clipboard"
-                    }
+	glNoGraph |
+		fzf -i -e --no-sort --reverse --tiebreak=index --no-multi \
+			--ansi --preview="$_viewGitLogLine" \
+			--header "enter: view, M-y: copy hash" \
+			--bind "enter:execute:$_viewGitLogLine   |
+            less -R" \
+			--bind "alt-y:execute:$_gitLogLineToHash |
+            xclip -r -selection clipboard"
+}
 ```
+
+---
 
 ```sh
 alias ka='egrep "^alias\ |^.*\(\)" $ZSH_CUSTOM/alias.zsh | fzf -i -e +s'
