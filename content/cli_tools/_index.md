@@ -29,7 +29,7 @@ custom_theme_compile = true
 
 ---
 
-{{< slide background-color="#fcf9e5" >}}
+<!-- {{< slide background-color="#fcf9e5" >}} -->
 
 # fzf
 
@@ -37,7 +37,7 @@ custom_theme_compile = true
 
 ---
 
-{{< slide background-color="#fcf9e5" >}}
+<!-- {{< slide background-color="#fcf9e5" >}} -->
 
 #### https://github.com/junegunn/fzf
 
@@ -45,7 +45,7 @@ custom_theme_compile = true
 
 ---
 
-{{< slide background-color="#fcf9e5" >}}
+<!-- {{< slide background-color="#fcf9e5" >}} -->
 
 Many commands return long outputs
 
@@ -58,7 +58,7 @@ ps -ef
 
 ---
 
-{{< slide background-color="#fcf9e5" >}}
+<!-- {{< slide background-color="#fcf9e5" >}} -->
 
 ```sh
 UID          PID    PPID  C STIME TTY          TIME CMD
@@ -204,7 +204,7 @@ Depending on settings, the cli may not allow to scroll back to the line of inter
 
 ---
 
-{{< slide background-color="#fcf9e5" >}}
+<!-- {{< slide background-color="#fcf9e5" >}} -->
 
 Classic options to make this more friendly: `less`
 
@@ -220,7 +220,7 @@ ps -ef | less
 
 ---
 
-{{< slide background-color="#fcf9e5" >}}
+<!-- {{< slide background-color="#fcf9e5" >}} -->
 
 But `fzf` allows much more
 
@@ -231,7 +231,7 @@ ps -ef | fzf
 
 ---
 
-{{< slide background-color="#fcf9e5" >}}
+<!-- {{< slide background-color="#fcf9e5" >}} -->
 
 ```sh
 ih() {				# fzf history
@@ -274,7 +274,7 @@ alias kr='egrep "^map\ " $HOME/.config/ranger/rc.conf | fzf -i -e +s'
 
 ---
 
-{{< slide background-color="#eaeffa" >}}
+<!-- {{< slide background-color="#eaeffa" >}} -->
 
 # autojump
 
@@ -282,7 +282,7 @@ alias kr='egrep "^map\ " $HOME/.config/ranger/rc.conf | fzf -i -e +s'
 
 ---
 
-{{< slide background-color="#eaeffa" >}}
+<!-- {{< slide background-color="#eaeffa" >}} -->
 
 #### https://github.com/wting/autojump
 
@@ -290,7 +290,7 @@ alias kr='egrep "^map\ " $HOME/.config/ranger/rc.conf | fzf -i -e +s'
 
 ---
 
-{{< slide background-color="#eff5f5" >}}
+<!-- {{< slide background-color="#eff5f5" >}} -->
 
 # ranger
 
@@ -298,7 +298,7 @@ alias kr='egrep "^map\ " $HOME/.config/ranger/rc.conf | fzf -i -e +s'
 
 ---
 
-{{< slide background-color="#eff5f5" >}}
+<!-- {{< slide background-color="#eff5f5" >}} -->
 
 #### https://github.com/ranger/ranger
 
