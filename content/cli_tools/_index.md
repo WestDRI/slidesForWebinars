@@ -537,13 +537,13 @@ alias kr='grep -E "^map\ " $HOME/.config/ranger/rc.conf |
 <br>
 Written in C: [nnn](https://github.com/jarun/nnn)
 
-In Go: [lf](https://github.com/gokcehan/lf)
+In Go: [lf](https://github.com/gokcehan/lf) (that's lower case "L")
 
-And in bash: [fff](https://github.com/dylanaraps/fff) (You will have to visit the page to know what the <span style="font-size: 1.2rem; font-family: monospace; box-shadow: 0px 0px 6px rgba(0,0,0,0.3); padding: 0.4rem; border-radius: 5%; background-color: #fff">f</span>s stand for. I'll just say here that it is a *Very* Fast File-manager)
+And in bash: [fff](https://github.com/dylanaraps/fff) (you will have to visit the page to know what the <span style="font-size: 1.2rem; font-family: monospace; box-shadow: 0px 0px 6px rgba(0,0,0,0.3); padding: 0.4rem; border-radius: 5%; background-color: #fff">f</span>s stand for. I'll just say here that it is a *Very* Fast File-manager)
 
 ---
 
-If you would like to explore other fun utilities, here is a little selection:
+#### If you would like to explore other fun utilities, here is a little selection:
 
 - [tig](https://github.com/jonas/tig). If you read it backward, you will get some hint as to what it is about
 
