@@ -5,8 +5,9 @@
 $backgroundColor: #fffaf6;
 
 // Primary/body text
+// $mainFont: 'Domine', Georgia, serif;
 $mainFont: 'Ibarra Real Nova', serif;
-$mainFontSize: 35px;
+$mainFontSize: 32px;
 $mainColor: #272a2a;
 
 // Vertical spacing between blocks of text
@@ -14,6 +15,7 @@ $blockMargin: 20px;
 
 // Headings
 $headingMargin: 0 0 $blockMargin 0;
+// $headingFont: Lato, Helvetica, sans-serif;
 $headingFont: 'Ibarra Real Nova', serif;
 $heading1Color: #000;
 $heading2Color: #383D3D;
