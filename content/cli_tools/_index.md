@@ -15,10 +15,6 @@ custom_theme_compile = true
 <br>
 <br>
 
-<!-- # Fun tools to make your life in the command line easier -->
-
-<!-- ![logo](/img/terminal.png) -->
-
 ![](/img/cli_title.png)
 
 #### <center>Marie-Hélène Burle</center>
@@ -41,17 +37,15 @@ custom_theme_compile = true
 
 ---
 
-Example: get running processes
+Get running processes:
 
-<br>
+{{% fragment %}}
 ```sh
 ps -ef
 ```
+{{% /fragment %}}
 
----
-
-<br>
-
+{{% fragment %}}
 ```sh
 UID          PID    PPID  C STIME TTY          TIME CMD
 root           1       0  0 Jan06 ?        00:00:16 /sbin/init
@@ -189,25 +183,26 @@ root        1031       2  0 Jan06 ?        00:00:00 [krfcommd]
 marie       1066     860  0 Jan06 ?        00:00:00 /usr/lib/qt/libexec/QtWebEngineProcess --type=zygote --webengine-schemes=qute:lL;qrc:sLV --lang=en-CA
 marie       1068    1066  0 Jan06 ?        00:00:00 /usr/lib/qt/libexec/QtWebEngineProcess --type=zygote --webengine-schemes=qute:lL;qrc:sLV --lang=en-CA
 ```
-{{% fragment %}}
-Not very user friendly.\\
-Depending on settings, it might not even be possible to scroll up to the line of interest.
 {{% /fragment %}}
 
 ---
 
-Classic tool to make this more friendly: `less`
+Not user friendly.
 
 <br>
-```sh
-ps -ef | less
-```
+Depending on settings, it might not even be possible to scroll up to the line of interest.
 
 ---
 
-<br>
-<br>
+Classic tool to make this easier: <span style="font-size: 1.5rem; font-family: monospace; box-shadow: 0px 0px 6px rgba(0,0,0,0.3); padding: 0.4rem; border-radius: 5%; background-color: #fff">less</span>
 
+{{% fragment %}}
+```sh
+ps -ef | less
+```
+{{% /fragment %}}
+
+{{% fragment %}}
 ```sh
 UID          PID    PPID  C STIME TTY          TIME CMD
 root           1       0  0 Jan06 ?        00:00:16 /sbin/init
@@ -224,63 +219,282 @@ root          13       2  0 Jan06 ?        00:00:00 [migration/0]
 root          14       2  0 Jan06 ?        00:00:00 [idle_inject/0]
 :
 ```
+{{% /fragment %}}
 
-{{% fragment %}} - allows to view output one screen at a time {{% /fragment %}}
+{{% fragment %}} - prints output one screen at a time {{% /fragment %}}
 
-{{% fragment %}} - allows easy searching {{% /fragment %}}
+{{% fragment %}} - search functionality {{% /fragment %}}
 
 ---
 
-But `fzf` allows much more:
+But <span style="font-size: 1.5rem; font-family: monospace; box-shadow: 0px 0px 6px rgba(0,0,0,0.3); padding: 0.4rem; border-radius: 5%; background-color: #fff">fzf</span> allows much more:
 
 <br>
 ```sh
 ps -ef | fzf
 ```
 
+<!-- --- -->
+
+<!-- <br> -->
+
+<!-- <center>Let's go to a terminal:</center> -->
+<!-- <br> -->
+<!-- ![logo](/img/cli.png) -->
+
+---
+
+As with many command line utilities, the documentation is in the manual page:
+
+<br>
+```sh
+man fzf
+```
+
+---
+
+### Let's go over an example
+
+<br>
+
+{{% fragment %}}
+I would like to reuse the command <span style="font-size: 1.5rem; font-family: monospace; box-shadow: 0px 0px 6px rgba(0,0,0,0.3); padding: 0.4rem; border-radius: 5%; background-color: #fff">sudo chown marie:marie /media/restic</span> which is in my command line history.
+{{% /fragment %}}
+
 ---
 
 <br>
 
-<center>Let's go to a terminal:</center>
+```sh
+history 
+```
+
+{{% fragment %}}
 <br>
-![logo](/img/cli.png)
+(grumble, grumble...)
+{{% /fragment %}}
 
 ---
 
 ```sh
-ih() {				# fzf history
-	print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) |
-					fzf -i -e +s --tac |
-					sed 's/ *[0-9]* *//')
+history | fzf
+```
+
+---
+
+Exact match to avoid escaping expressions with <span style="font-size: 1.2rem; font-family: monospace; box-shadow: 0px 0px 6px rgba(0,0,0,0.3); padding: 0.4rem; border-radius: 5%; background-color: #fff">'</span>
+
+<br>
+
+```sh
+history | fzf -e
+```
+
+---
+
+Reverse order...
+
+<br>
+
+```sh
+history | fzf -e --tac
+```
+
+---
+
+...but without sorting
+
+<br>
+
+```sh
+history | fzf -e --tac +s
+```
+
+---
+
+Let's get rid of the history number
+
+<br>
+
+```sh
+history |
+	fzf -e --tac +s |
+	sed -E 's/ *[0-9]* *//'
+```
+
+---
+
+Maybe we could send the result to the clipboard for extra convenience
+
+<br>
+
+```sh
+history |
+	fzf -e --tac +s |
+	sed -E 's/ *[0-9]* *//' |
+	xclip -r -selection clipboard
+```
+
+---
+
+We could even create a little function
+
+<br>
+
+```sh
+his() {			# search history, send selection to clipboard
+	history |
+		fzf -e --tac +s |
+		sed -E "s/ *[0-9]* *//" |
+		xclip -r -selection clipboard
 }
 ```
 
 ---
 
+### 2nd example
+
+<br>
+
+{{% fragment %}}
+I would like to kill 2 apps: mictray and pasystray
+{{% /fragment %}}
+
+---
+
 ```sh
-ik() {				# fzf kill process
-	local pid
-	if [ "$UID" != "0" ]; then
-		pid=$(ps -f -u $UID |
-				  sed 1d |
-				  fzf -i -e -m |
-				  awk '{print $2}')
-	else
-		pid=$(ps -ef |
-				  sed 1d |
-				  fzf -i -e -m |
-				  awk '{print $2}')
-	fi
+ps -ef
+```
+
+{{% fragment %}}
+<br>
+(grumble, grumble...)
+{{% /fragment %}}
+
+---
+
+```sh
+ps -ef | less
+```
+
+{{% fragment %}}
+<br>
+(grumble)
+{{% /fragment %}}
+
+---
+
+```sh
+ps -ef | fzf
+```
+
+---
+
+We already know the exact match flag
+
+<br>
+
+```sh
+ps -ef | fzf -e
+```
+
+---
+
+<span style="font-size: 1.2rem; font-family: monospace; box-shadow: 0px 0px 6px rgba(0,0,0,0.3); padding: 0.4rem; border-radius: 5%; background-color: #fff">-m</span> to select multiple entries (with <span style="font-size: 1.2rem; font-family: monospace; box-shadow: 0px 0px 6px rgba(0,0,0,0.3); padding: 0.4rem; border-radius: 5%; background-color: #fff">Tab</span>)
+
+<br>
+
+```sh
+ps -ef | fzf -e -m
+```
+
+---
+
+What we want is the pid, which is the 2nd element
+
+<br>
+
+```sh
+ps -ef |
+	fzf -e -m |
+	awk '{print $2}'
+```
+
+---
+
+And once we have it, we want to terminate it (with <span style="font-size: 1.2rem; font-family: monospace; box-shadow: 0px 0px 6px rgba(0,0,0,0.3); padding: 0.4rem; border-radius: 5%; background-color: #fff">kill</span>)
+
+<br>
+
+```sh
+ps -ef |
+	fzf -e -m |
+	awk '{print $2}' |
+	xargs kill
+```
+
+---
+
+If this fails, instead of sending the terminate signal (SIGTERM or 15, which is <span style="font-size: 1.2rem; font-family: monospace; box-shadow: 0px 0px 6px rgba(0,0,0,0.3); padding: 0.4rem; border-radius: 5%; background-color: #fff">kill</span>'s default), we can send the kill signal (SIGKILL or 9)
+
+<br>
+
+```sh
+ps -ef |
+	fzf -e -m |
+	awk '{print $2}' |
+	xargs kill -${1:-9}
+```
+
+---
+
+Of course, one can always create a function and add sophistications
+
+```sh
+killp() {				# kill process
+    local pid
+    if [ "$UID" != "0" ]; then
+		pid=$(ps -f -u $UID | sed 1d | fzf -i -e -m | awk '{print $2}')
+    else
+		pid=$(ps -ef | sed 1d | fzf -i -e -m | awk '{print $2}')
+    fi
+
+    if [ "x$pid" != "x" ]
+    then
+		echo $pid | xargs kill -${1:-15}
+    fi
 }
 ```
 
 ---
 
+### Last example (getting fancy)
+
+<br>
+
+{{% fragment %}}
+I would like to find a commit and copy its hash.
+{{% /fragment %}}
+
+---
+
 ```sh
-gcop() {			# git commit check with preview and copy hash
+alias glNoGraph='git log --color=always \
+--format="%C(cyan)%h%Creset %C(blue)%ar%Creset%C(auto)%d%Creset \
+%C(yellow)%s%+b %C(black)%ae%Creset" "$@"'
+
+_gitLogLineToHash="echo {} |
+grep -o '[a-f0-9]\{7\}' |
+head -1"
+
+_viewGitLogLine="$_gitLogLineToHash | 
+xargs -I % sh -c 'git show --color=always % | 
+diff-so-fancy'"
+
+gcop() {	# search for commit with preview and copy hash
 	glNoGraph |
-		fzf -i -e --no-sort --reverse --tiebreak=index --no-multi \
+		fzf -i -e --no-sort --reverse \
+			--tiebreak=index --no-multi \
 			--ansi --preview="$_viewGitLogLine" \
 			--header "enter: view, M-y: copy hash" \
 			--bind "enter:execute:$_viewGitLogLine   |
@@ -289,20 +503,6 @@ gcop() {			# git commit check with preview and copy hash
             xclip -r -selection clipboard"
 }
 ```
-
----
-
-```sh
-alias ka='egrep "^alias\ |^.*\(\)" $ZSH_CUSTOM/alias.zsh | fzf -i -e +s'
-```
-
-```sh
-alias ke='grep -A 1 "(kbd .*)" $HOME/.emacs | fzf -i -e +s'
-```
-
-
-alias kr='egrep "^map\ " $HOME/.config/ranger/rc.conf | fzf -i -e +s'
-
 
 ---
 
@@ -322,12 +522,40 @@ alias kr='egrep "^map\ " $HOME/.config/ranger/rc.conf | fzf -i -e +s'
 
 ---
 
-https://github.com/jarun/nnn
-https://github.com/gokcehan/lf
-https://github.com/dylanaraps/fff
+Here is a little trick with <span style="font-size: 1.2rem; font-family: monospace; box-shadow: 0px 0px 6px rgba(0,0,0,0.3); padding: 0.4rem; border-radius: 5%; background-color: #fff">fzf</span> for those with short memory (like me) to get reminded of the keybindings
+
+<br>
+
+```sh
+alias kr='grep -E "^map\ " $HOME/.config/ranger/rc.conf |
+ fzf -i -e +s'
+```
 
 ---
 
-https://github.com/jonas/tig
-https://github.com/BurntSushi/ripgrep
-https://github.com/ggreer/the_silver_searcher
+## Alternatives to ranger
+
+<br>
+Written in C: [nnn](https://github.com/jarun/nnn)
+
+In Go: [lf](https://github.com/gokcehan/lf)
+
+And in bash: [fff](https://github.com/dylanaraps/fff) (You will have to visit the page to know what the <span style="font-size: 1.2rem; font-family: monospace; box-shadow: 0px 0px 6px rgba(0,0,0,0.3); padding: 0.4rem; border-radius: 5%; background-color: #fff">f</span>s stand for. I'll just say here that it is a *Very* Fast File-manager)
+
+---
+
+If you would like to explore other fun utilities, here is a little selection:
+
+- [tig](https://github.com/jonas/tig). If you read it backward, you will get some hint as to what it is about
+
+- [rg](https://github.com/BurntSushi/ripgrep). Stands for "RIP grep"...
+
+- [ag](https://github.com/ggreer/the_silver_searcher). Similar to <span style="font-size: 1.2rem; font-family: monospace; box-shadow: 0px 0px 6px rgba(0,0,0,0.3); padding: 0.4rem; border-radius: 5%; background-color: #fff">rg</span>. You need to have some background in Latin or in chemistry to know right away that it is the *silver* searcher
+
+- [fd](https://github.com/sharkdp/fd). If you have always found <span style="font-size: 1.2rem; font-family: monospace; box-shadow: 0px 0px 6px rgba(0,0,0,0.3); padding: 0.4rem; border-radius: 5%; background-color: #fff">find</span>'s syntax awkward, this might be for you. And it is fast. *Very fast*
+
+- [fasd](https://github.com/clvv/fasd). Similar to autojump, but also works on files. However the project is currently not being developed anymore
+
+---
+
+![](/img/questions.png)
