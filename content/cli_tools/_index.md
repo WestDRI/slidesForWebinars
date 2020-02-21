@@ -234,14 +234,6 @@ But <span style="font-size: 1.5rem; font-family: monospace; box-shadow: 0px 0px 
 ps -ef | fzf
 ```
 
-<!-- --- -->
-
-<!-- <br> -->
-
-<!-- <center>Let's go to a terminal:</center> -->
-<!-- <br> -->
-<!-- ![logo](/img/cli.png) -->
-
 ---
 
 As with many command line utilities, the documentation is in the manual page:
