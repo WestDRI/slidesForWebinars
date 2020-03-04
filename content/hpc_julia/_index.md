@@ -118,17 +118,17 @@ Discourse [forum](https://discourse.julialang.org/)
 
 #### Emacs
 
-[julia-emacs](https://github.com/JuliaEditorSupport/julia-emacs) & [julia-repl](https://github.com/tpapp/julia-repl)<br>
+[julia-emacs](https://github.com/JuliaEditorSupport/julia-emacs) with [julia-repl](https://github.com/tpapp/julia-repl)<br>
 [ESS](https://github.com/emacs-ess/ESS)<br>
-[Emacs IPython Notebook](http://millejoh.github.io/emacs-ipython-notebook/) to access Jupyter notebooks in Emacs
+[EIN](http://millejoh.github.io/emacs-ipython-notebook/) to access Jupyter notebooks from Emacs
 
 #### Juno
 
-[Juno](https://junolab.org/): a Julia IDE built on [Atom](https://atom.io/)
+[A Julia IDE](https://junolab.org/) built on [Atom](https://atom.io/)
 
 #### Jupyter
 
-[Project Jupyter](https://jupyter.org/) allows to create interactive programming documents
+[Project Jupyter](https://jupyter.org/) has a Julia kernel
 
 ---
 
