@@ -449,8 +449,16 @@ sq
 PD: pending <br>
 R: running
 
+---
 
+### <center>Results</center>
+<br>
 
-
-
-
+```sh
+Running non parallel loop on 32 cores
+0.810377 seconds
+Running parallel loop on 32 cores
+0.093013 seconds (31.92 k allocations: 1.785 MiB)
+```
+<br>
+89% faster
