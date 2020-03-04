@@ -12,11 +12,17 @@ custom_theme = "mh.scss"
 custom_theme_compile = true
 +++
 
-# High-Performance Computing with Julia
+<br>
+<br>
+<br>
 
-## Marie-Helene Burle
+<center><img src="/img/jl_title.png" width="520"></center>
 
-### marie.burle@westgrid.ca
+#### <center>Marie-Hélène Burle</center>
+
+##### <center><marie.burle@westgrid.ca></center>
+
+###### <center>*March 04, 2020*</center>
 
 ---
 
