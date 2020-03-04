@@ -420,8 +420,8 @@ module load gcc/7.3.0 julia/1.3.0
 #SBATCH --time=00:01:00				# max walltime 1 min
 #SBATCH --cpus-per-task=32   		# number of cores
 #SBATCH --mem=1000					# max memory
-#SBATCH --output=julialoop.out		# file name for the output
-#SBATCH --error=julialoop.err		# file name for errors
+#SBATCH --output=julialoop%j.out	# file name for the output
+#SBATCH --error=julialoop%j.err		# file name for errors
 
 echo Running NON parallel loop on $SLURM_CPUS_PER_TASK core
 JULIA_NUM_THREADS=$SLURM_CPUS_PER_TASK julia loop.jl
