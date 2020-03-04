@@ -317,19 +317,19 @@ plot(p1, p2, p3, p4)
 
 ### <center>Launching Julia on multiple threads</center>
 <br>
-Set the environment variable
+Set the environment variable (in a terminal)
 
 ```sh
 export JULIA_NUM_THREADS=n
 ```
 <br>
-Or launch a Julia session with it
+Or launch a Julia session with it (in a terminal)
 
 ```sh
 export JULIA_NUM_THREADS=n julia
 ```
 <br>
-To see how many threads are being used in a Julia session
+See how many threads are used in a Julia session (in the Julia REPL)
 
 ```jl
 Threads.nthreads()
@@ -346,7 +346,7 @@ for i = 1:10
     println("Iteration $i ran on thread $(Threads.threadid())")
 end
 ```
-
+<br>
 **Parallel code**
 
 ```jl
@@ -368,7 +368,7 @@ Let's do a simple loop with 10,000,000 iterations
     i ^ i
 end
 ```
-
+<br>
 **Parallel code**
 
 ```jl
