@@ -42,9 +42,9 @@ Version 1.0 released in 2018
 
 Computer languages mostly fall into two categories:
 
-**Compiled languages**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Compiled languages**
 
-**Interpreted languages**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Interpreted languages**
 
 ---
 
@@ -120,11 +120,13 @@ Discourse [forum](https://discourse.julialang.org/)
 
 [julia-emacs](https://github.com/JuliaEditorSupport/julia-emacs) with [julia-repl](https://github.com/tpapp/julia-repl)<br>
 [ESS](https://github.com/emacs-ess/ESS)<br>
-[EIN](http://millejoh.github.io/emacs-ipython-notebook/) to access Jupyter notebooks from Emacs
+[EIN](http://millejoh.github.io/emacs-ipython-notebook/) for Jupyter notebooks
+<br>
 
 #### Juno
 
 [A Julia IDE](https://junolab.org/) built on [Atom](https://atom.io/)
+<br>
 
 #### Jupyter
 
@@ -183,13 +185,13 @@ C-s		forward search
 ### <center>Managing packages in <span style="font-family: monospace; font-size: 1.8rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">Pkg</span> mode</center>
 <br>
 
-```jl
+```
 add <package>		install a package
 rm  <package>		uninstall a package
 up  <package>		upgrade a package
 
-st			        check which packages are installed
-up			        upgrade all packages
+st		        status of all installed packages
+up		        upgrade all installed packages
 ```
 <br>
 By default, installed in <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">~/.julia</span>
@@ -275,7 +277,7 @@ end
 
 addTwo(3)
 
-# In terse format
+# Terse format
 addtwo = a -> a + 2
 
 # With default argument
@@ -296,7 +298,8 @@ Fun: plots in the command line!
 
 ```jl
 using UnicodePlots
-histogram(randn(1000), nbins=40)
+
+UnicodePlots.histogram(randn(1000), nbins=40)
 ```
 <br>
 This can be useful in remote sessions
@@ -312,14 +315,14 @@ Nicer looking plots
 using Plots, Distributions, StatsPlots
 gr() # Using the GR framework as backend
 x = 1:10; y = rand(10, 2);
-p1 = histogram(randn(1000), nbins=40)
+p1 = Plots.histogram(randn(1000), nbins=40)
 p2 = plot(Normal(0, 1))
 p3 = scatter(x, y)
 p4 = plot(x, y)
 plot(p1, p2, p3, p4)
 ```
 <br>
-[Nice demos](http://docs.juliaplots.org/latest/) on the <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">Plots</span> package site
+The <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">Plots</span> site has [demos](http://docs.juliaplots.org/latest/)
 
 ---
 
@@ -329,19 +332,19 @@ plot(p1, p2, p3, p4)
 
 ### <center>Launching Julia on multiple threads</center>
 <br>
-Set the environment variable (in a terminal)
+Set the environment variable (in a terminal):
 
 ```sh
 export JULIA_NUM_THREADS=n
 ```
 <br>
-Or launch a Julia session with it (in a terminal)
+Or launch a julia session with (in a terminal):
 
 ```sh
 export JULIA_NUM_THREADS=n julia
 ```
 <br>
-See how many threads are used in a Julia session (in the Julia REPL)
+See how many threads are used in a julia session (in the Julia REPL):
 
 ```jl
 Threads.nthreads()
@@ -405,7 +408,7 @@ module spider julia
 # See modules required to load julia 1.3
 module spider julia/1.3.0
 
-# Load required module and julia
+# Load required gcc module and julia module
 module load gcc/7.3.0 julia/1.3.0
 ```
 
@@ -417,21 +420,21 @@ module load gcc/7.3.0 julia/1.3.0
 ```sh
 #!/bin/bash
 #SBATCH --job-name=julialoop		# job name
-#SBATCH --time=00:01:00				# max walltime 1 min
+#SBATCH --time=00:00:30				# max walltime 30s
 #SBATCH --cpus-per-task=32   		# number of cores
-#SBATCH --mem=1000					# max memory
-#SBATCH --output=julialoop%j.out	# file name for the output
-#SBATCH --error=julialoop%j.err		# file name for errors
+#SBATCH --mem=100					# max memory (in MB)
+#SBATCH --output=julialoop%j.out	# output file name
+#SBATCH --error=julialoop%j.err		# errors file name
 
-echo Running NON parallel loop on $SLURM_CPUS_PER_TASK core
+echo Running non parallel loop on $SLURM_CPUS_PER_TASK cores
 JULIA_NUM_THREADS=$SLURM_CPUS_PER_TASK julia loop.jl
-echo Running parallel loop on $SLURM_CPUS_PER_TASK core
+echo Running parallel loop on $SLURM_CPUS_PER_TASK cores
 JULIA_NUM_THREADS=$SLURM_CPUS_PER_TASK julia ploop.jl
 ```
 
 ---
 
-### <center>Running the job</center>
+### <center>Submit job</center>
 <br>
 
 ```sh
@@ -439,7 +442,7 @@ sbatch job_julialoop.sh
 ```
 <br>
 
-### <center>Checking the job status</center>
+### <center>Check its status</center>
 <br>
 
 ```sh
