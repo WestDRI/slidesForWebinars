@@ -292,12 +292,22 @@ name()
 ### <center>Plotting</center>
 <br>
 Fun: plots in the command line!
+<br>
+
 ```jl
 using UnicodePlots
 histogram(randn(1000), nbins=40)
 ```
 <br>
+This can be useful in remote sessions
+
+---
+
+### <center>Plotting</center>
+<br>
 Nicer looking plots
+<br>
+
 ```jl
 using Plots, Distributions, StatsPlots
 gr() # Using the GR framework as backend
@@ -308,6 +318,8 @@ p3 = scatter(x, y)
 p4 = plot(x, y)
 plot(p1, p2, p3, p4)
 ```
+<br>
+[Nice demos](http://docs.juliaplots.org/latest/) on the <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">Plots</span> package site
 
 ---
 
