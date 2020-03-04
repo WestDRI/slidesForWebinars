@@ -341,7 +341,7 @@ export JULIA_NUM_THREADS=n
 Or launch a julia session with (in a terminal):
 
 ```sh
-export JULIA_NUM_THREADS=n julia
+JULIA_NUM_THREADS=n julia
 ```
 <br>
 See how many threads are used in a julia session (in the Julia REPL):
