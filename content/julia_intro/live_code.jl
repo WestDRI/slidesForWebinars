@@ -48,6 +48,8 @@ addTwo(3)
 # In terse format
 addtwo = a -> a + 2
 
+addTwo()
+
 # With default argument
 function name(a = "unknown")
     println("My name is $a.")

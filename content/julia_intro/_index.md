@@ -1,5 +1,5 @@
 +++
-title = "hpc_julia"
+title = "julia_intro"
 outputs = ["Reveal"]
 [logowg]
 src = "/img/wg_white_removed_medium.png"
