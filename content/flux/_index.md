@@ -1,5 +1,5 @@
 +++
-title = "ml_flux"
+title = "flux"
 outputs = ["Reveal"]
 [logowg]
 src = "/img/wg_white_removed_medium.png"
