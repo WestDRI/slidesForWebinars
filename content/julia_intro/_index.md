@@ -185,16 +185,17 @@ C-s		forward search
 ### <center>Managing packages in <span style="font-family: monospace; font-size: 1.8rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">Pkg</span> mode</center>
 <br>
 
-```
-add <package>		install a package
-rm  <package>		uninstall a package
-up  <package>		upgrade a package
+```jl
+(env) pkg> add <package>        # install <package>
+(env) pkg> rm <package>         # uninstall <package>
+(env) pkg> up <package>         # upgrade <package>
 
-st		        status of all installed packages
-up		        upgrade all installed packages
+(env) pkg> st                   # check which packages are installed
+(env) pkg> up                   # upgrade all packages
 ```
+
 <br>
-By default, installed in <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">~/.julia</span>
+By default, installed in <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; border-radius: 5%; border: 0.5pt solid #d9d9d9; box-shadow: 0px 0px 2.5px rgba(0,0,0,0.3); color: #000000">~/.julia</span>
 
 ---
 
@@ -202,7 +203,7 @@ By default, installed in <span style="font-family: monospace; font-size: 1.2rem;
 <br>
 
 ```jl
-using <package>
+> using <package>
 ```
 
 ---
@@ -211,10 +212,13 @@ using <package>
 <br>
 
 ```jl
-typeof(2)
-typeof(2.0)
-typeof("hello")
-typeof(true)
+> typeof(2)
+
+> typeof(2.0)
+
+> typeof("hello")
+
+> typeof(true)
 ```
 
 ---
@@ -222,13 +226,15 @@ typeof(true)
 ### <center>Indexing</center>
 <br>
 
-Indexing starts at 1, not 0
+Indexing starts at <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">1</span>, not <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">0</span>
 <br><br>
 
 ```jl
-a = [1 2; 3 4]
-a[1, 1]
-a[1, :]
+> a = [1 2; 3 4]
+
+> a[1, 1]
+
+> a[1, :]
 ```
 
 ---
@@ -237,12 +243,12 @@ a[1, :]
 <br>
 
 ```jl
-for i in 1:10
+> for i in 1:10
     println(i)
 end
 
 
-for i in 1:3, j = 1:2
+> for i in 1:3, j = 1:2
     println(i * j)
 end
 ```
@@ -253,17 +259,17 @@ end
 <br>
 
 ```jl
-a = 2
-b = 2.0
+> a = 2
+> b = 2.0
 
-if a == b
+> if a == b
     println("It's true")
 else
     println("It's false")
 end
 
 # Terse format
-a == b ? println("It's true") : println("It's false")
+> a == b ? println("It's true") : println("It's false")
 ```
 
 ---
@@ -271,22 +277,22 @@ a == b ? println("It's true") : println("It's false")
 ### <center>Functions</center>
 
 ```jl
-function addTwo(a)
+> function addTwo(a)
     a + 2
 end
 
-addTwo(3)
+> addTwo(3)
 
 # Terse format
-addtwo = a -> a + 2
+> addtwo = a -> a + 2
 
 # With default argument
-function name(a = "unknown")
+> function name(a = "unknown")
     println("My name is $a.")
 end
 
-name("Julia")
-name()
+> name("Julia")
+> name()
 ```
 
 ---
@@ -297,9 +303,9 @@ Fun: plots in the command line!
 <br>
 
 ```jl
-using UnicodePlots
+> using UnicodePlots
 
-UnicodePlots.histogram(randn(1000), nbins=40)
+> UnicodePlots.histogram(randn(1000), nbins=40)
 ```
 <br>
 This can be useful in remote sessions
@@ -312,17 +318,18 @@ Nicer looking plots
 <br>
 
 ```jl
-using Plots, Distributions, StatsPlots
-gr() # Using the GR framework as backend
-x = 1:10; y = rand(10, 2);
-p1 = Plots.histogram(randn(1000), nbins=40)
-p2 = plot(Normal(0, 1))
-p3 = scatter(x, y)
-p4 = plot(x, y)
-plot(p1, p2, p3, p4)
+> using Plots, Distributions, StatsPlots
+> gr() # Using the GR framework as backend
+
+> x = 1:10; y = rand(10, 2);
+> p1 = Plots.histogram(randn(1000), nbins=40)
+> p2 = plot(Normal(0, 1))
+> p3 = scatter(x, y)
+> p4 = plot(x, y)
+> plot(p1, p2, p3, p4)
 ```
 <br>
-The <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">Plots</span> site has [demos](http://docs.juliaplots.org/latest/)
+The <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; border-radius: 5%; border: 0.5pt solid #d9d9d9; box-shadow: 0px 0px 2.5px rgba(0,0,0,0.3); color: #000000">Plots</span> site has [demos](http://docs.juliaplots.org/latest/)
 
 ---
 
@@ -332,22 +339,22 @@ The <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box
 
 ### <center>Launching Julia on multiple threads</center>
 <br>
-Set the environment variable (in a terminal):
+Set the environment variable:
 
 ```sh
-export JULIA_NUM_THREADS=n
+$ export JULIA_NUM_THREADS=n
 ```
 <br>
-Or launch a julia session with (in a terminal):
+Or launch a julia session with:
 
 ```sh
-JULIA_NUM_THREADS=n julia
+$ JULIA_NUM_THREADS=n julia
 ```
 <br>
-See how many threads are used in a julia session (in the Julia REPL):
+See how many threads are used in a julia session:
 
 ```jl
-Threads.nthreads()
+> Threads.nthreads()
 ```
 
 ---
@@ -357,7 +364,7 @@ Threads.nthreads()
 **Non parallel code**
 
 ```jl
-for i = 1:10
+> for i = 1:10
     println("Iteration $i ran on thread $(Threads.threadid())")
 end
 ```
@@ -365,7 +372,7 @@ end
 **Parallel code**
 
 ```jl
-Threads.@threads for i = 1:10
+> Threads.@threads for i = 1:10
     println("Iteration $i ran on thread $(Threads.threadid())")
 end
 ```
@@ -379,7 +386,7 @@ Let's do a simple loop with 10,000,000 iterations
 **Non parallel code**
 
 ```jl
-@time for i = 1:10000000
+> @time for i = 1:10000000
     i ^ i
 end
 ```
@@ -387,7 +394,7 @@ end
 **Parallel code**
 
 ```jl
-@time Threads.@threads for i = 1:10000000
+> @time Threads.@threads for i = 1:10000000
     i ^ i
 end
 ```
@@ -403,13 +410,13 @@ end
 
 ```sh
 # Look for available julia modules
-module spider julia
+$ module spider julia
 
 # See modules required to load julia 1.3
-module spider julia/1.3.0
+$ module spider julia/1.3.0
 
 # Load required gcc module and julia module
-module load gcc/7.3.0 julia/1.3.0
+$ module load gcc/7.3.0 julia/1.3.0
 ```
 
 ---
@@ -438,7 +445,7 @@ JULIA_NUM_THREADS=$SLURM_CPUS_PER_TASK julia ploop.jl
 <br>
 
 ```sh
-sbatch job_julialoop.sh
+$ sbatch job_julialoop.sh
 ```
 <br>
 
@@ -446,11 +453,10 @@ sbatch job_julialoop.sh
 <br>
 
 ```sh
-sq
+$ sq
 ```
 
-PD: pending <br>
-R: running
+PD: pending &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R: running
 
 ---
 
@@ -464,4 +470,4 @@ Running parallel loop on 32 cores
 0.093013 seconds (31.92 k allocations: 1.785 MiB)
 ```
 <br>
-89% faster
+<center>89% faster</center>
