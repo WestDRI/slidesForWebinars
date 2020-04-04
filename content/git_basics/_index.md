@@ -207,7 +207,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center>This allows for a sensible history</center>
+#### <center>This allows to archive snapshots with key sets of changes</center>
 <br>
 ![](/img/git/diagrams/git21.png)
 
@@ -295,7 +295,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center>Our previous edit is lost</center>
+#### <center>Our previous edit (edit3) is lost</center>
 <br>
 ![](/img/git/diagrams/git30.png)
 
@@ -327,7 +327,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center>We can't do it now because our changes would be lost</center>
+#### <center>We can't now as our uncommitted changes would be lost</center>
 <br>
 ![](/img/git/diagrams/git32.png)
 
@@ -351,7 +351,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center>Let's keep it simple and commit our changes: <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git add file2</span></center>
+#### <center>Let's keep it simple and commit them instead: <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git add file2</span></center>
 <br>
 ![](/img/git/diagrams/git33.png)
 
@@ -359,7 +359,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center>Let's keep it simple and commit our changes: <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git add file2</span></center>
+#### <center>Let's keep it simple and commit them instead: <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git add file2</span></center>
 <br>
 ![](/img/git/diagrams/git34.png)
 
@@ -391,7 +391,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center>We do this with: <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git checkout &lt;commit hash&gt;</span></center>
+#### <center>We do this with: <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git checkout &lt;commit hash 2<sup>nd</sup> commit&gt;</span></center>
 <br>
 ![](/img/git/diagrams/git37.png)
 
@@ -415,7 +415,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center>It currently holds file1 with its edits and file2</center>
+#### <center>It currently holds file1 with its latest edits and file2</center>
 <br>
 ![](/img/git/diagrams/git37.png)
 
@@ -434,3 +434,35 @@ custom_theme_compile = true
 #### <center>our working tree is back to that point in history</center>
 <br>
 ![](/img/git/diagrams/git38.png)
+
+---
+
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+<br>
+#### <center>If we want to go back to the latest version of our project</center>
+<br>
+![](/img/git/diagrams/git38.png)
+
+---
+
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+<br>
+#### <center>all we have to do is to checkout our latest commit</center>
+<br>
+![](/img/git/diagrams/git38.png)
+
+---
+
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+<br>
+#### <center><span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git checkout &lt;commit hash 4<sup>th</sup> commit&gt;</span></center>
+<br>
+![](/img/git/diagrams/git39.png)
+
+---
+
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+<br>
+#### <center>*Et voilà!*</center>
+<br>
+![](/img/git/diagrams/git36.png)
