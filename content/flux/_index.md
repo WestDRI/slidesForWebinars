@@ -16,7 +16,7 @@ custom_theme_compile = true
 
 ## Marie-Helene Burle
 
-### marie.burle@westgrid.ca
+### training@westgrid.ca
 
 ---
 
