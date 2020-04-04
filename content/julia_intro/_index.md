@@ -16,7 +16,7 @@ custom_theme_compile = true
 <br>
 <br>
 
-<center><img src="/img/jl_title.png" width="520"></center>
+<center><img src="/img/jl/jl_title.png" width="520"></center>
 
 #### <center>Marie-Hélène Burle</center>
 
@@ -50,13 +50,13 @@ Computer languages mostly fall into two categories:
 
 ### <center>Compiled languages</center>
 <br>
-![](/img/compiled_language.png)
+![](/img/jl/compiled_language.png)
 
 ---
 
 ### <center>Interpreted languages</center>
 <br>
-![](/img/interpreted_language.png)
+![](/img/jl/interpreted_language.png)
 
 ---
 
@@ -137,7 +137,7 @@ Discourse [forum](https://discourse.julialang.org/)
 ### <center>REPL</center>
 <br>
 
-<center>![](/img/julia_repl.png)</center>
+<center>![](/img/jl/julia_repl.png)</center>
 
 ---
 

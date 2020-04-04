@@ -15,7 +15,7 @@ custom_theme_compile = true
 <br>
 <br>
 
-![](/img/cli_title.png)
+![](/img/cli_tools/cli_title.png)
 
 #### <center>Marie-Hélène Burle</center>
 
@@ -29,7 +29,7 @@ custom_theme_compile = true
 
 <br>
 
-[![logo](/img/fzf.png)](https://github.com/junegunn/fzf)
+[![logo](/img/cli_tools/fzf.png)](https://github.com/junegunn/fzf)
 
 ---
 
@@ -501,7 +501,7 @@ gcop() {	# search for commit with preview and copy hash
 
 <br>
 
-[![logo](/img/autojump.png)](https://github.com/wting/autojump)
+[![logo](/img/cli_tools/autojump.png)](https://github.com/wting/autojump)
 
 ---
 
@@ -509,7 +509,7 @@ gcop() {	# search for commit with preview and copy hash
 
 <br>
 
-[![logo](/img/ranger.png)](https://github.com/ranger/ranger)
+[![logo](/img/cli_tools/ranger.png)](https://github.com/ranger/ranger)
 
 ---
 
@@ -549,4 +549,4 @@ And in bash: [fff](https://github.com/dylanaraps/fff) (you will have to visit th
 
 ---
 
-![](/img/questions.png)
+![](/img/cli_tools/questions.png)
