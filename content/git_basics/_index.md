@@ -434,8 +434,3 @@ custom_theme_compile = true
 #### <center>our working tree is back to that point in history</center>
 <br>
 ![](/img/git/diagrams/git38.png)
-
----
-
-<img src="/img/git/git_icon_black.png" style="position: absolute; top: 25%; left: 51.7%; width: 2%;">
-# <center><span style="font-variant: small-caps;">Questions?</span></center>
