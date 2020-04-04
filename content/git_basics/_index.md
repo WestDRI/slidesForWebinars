@@ -21,7 +21,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>3 components</center>
 <br>
@@ -29,7 +29,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>3 components</center>
 <br>
@@ -37,7 +37,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>What files are we talking about?</center>
 <br>
@@ -45,7 +45,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>Now, let's consider the *state* of files</center>
 <br>
@@ -53,7 +53,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>When nothing is modified in our working tree...</center>
 <br>
@@ -61,7 +61,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>...we say that the working tree is "clean"</center>
 <br>
@@ -69,7 +69,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>Let's create a new file</center>
 <br>
@@ -77,7 +77,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>This is what happens when we run <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git add file1</span></center>
 <br>
@@ -85,7 +85,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>file1 is now ready to be committed</center>
 <br>
@@ -93,7 +93,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>We take a "snapshot": <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git commit -m "&lt;description of the commit&gt;"</span></center>
 <br>
@@ -101,7 +101,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>We have archived file1 in its current state</center>
 <br>
@@ -109,7 +109,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>Of course file1 is still in our working tree</center>
 <br>
@@ -117,7 +117,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>but our working tree is clean since there is no new change</center>
 <br>
@@ -125,7 +125,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>What happens if we make an edit to file1?</center>
 <br>
@@ -133,7 +133,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>or if we create a new file?</center>
 <br>
@@ -141,7 +141,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>The working tree is not clean anymore</center>
 <br>
@@ -149,7 +149,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>and shows modified files</center>
 <br>
@@ -157,7 +157,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>We can stage some or all of these new changes</center>
 <br>
@@ -165,7 +165,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>For instance, let's stage the edit of file1: <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git add file1</span></center>
 <br>
@@ -173,7 +173,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>For instance, let's stage the edit of file1: <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git add file1</span></center>
 <br>
@@ -181,7 +181,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>Let's make a new edit to file1</center>
 <br>
@@ -189,7 +189,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>We can pick and choose what to commit together</center>
 <br>
@@ -197,7 +197,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>The staging area is where the next commit gets organized</center>
 <br>
@@ -205,7 +205,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>This allows for a sensible history</center>
 <br>
@@ -213,7 +213,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>instead of random mixed bags of changes</center>
 <br>
@@ -221,7 +221,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>You don't have to stage entire files</center>
 <br>
@@ -229,7 +229,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>You can select sections with <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git add -p</span></center>
 <br>
@@ -237,7 +237,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>A version of a file is only archived when it is committed</center>
 <br>
@@ -245,7 +245,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>as information in the staging area can be overwritten</center>
 <br>
@@ -253,7 +253,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>For instance, let's make a new edit in file1</center>
 <br>
@@ -261,7 +261,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>and stage it with <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git add file1</span></center>
 <br>
@@ -269,7 +269,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>and stage it with <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git add file1</span></center>
 <br>
@@ -277,7 +277,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>Now let's make a new edit in the same section</center>
 <br>
@@ -285,7 +285,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>and stage it with <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git add file1</span></center>
 <br>
@@ -293,7 +293,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>Our previous edit is lost</center>
 <br>
@@ -301,7 +301,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>Once we commit (<span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git commit -m "&lt;message&gt;"</span>) however</center>
 <br>
@@ -309,7 +309,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>that version enters the project history</center>
 <br>
@@ -317,7 +317,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>This archiving is nice, but how to return to old versions?</center>
 <br>
@@ -325,7 +325,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>We can't do it now because our changes would be lost</center>
 <br>
@@ -333,7 +333,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>We need to commit or stash them first</center>
 <br>
@@ -341,7 +341,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>Stashing puts changes out of the way temporarily</center>
 <br>
@@ -349,7 +349,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>Let's keep it simple and commit our changes: <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git add file2</span></center>
 <br>
@@ -357,7 +357,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>Let's keep it simple and commit our changes: <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git add file2</span></center>
 <br>
@@ -365,7 +365,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>and <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git commit -m "&lt;message&gt;"</span></center>
 <br>
@@ -373,7 +373,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>We now have a clean working tree</center>
 <br>
@@ -381,7 +381,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>so we can check out an old version</center>
 <br>
@@ -389,7 +389,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>We do this with: <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git checkout &lt;commit hash&gt;</span></center>
 <br>
@@ -397,7 +397,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>The hash of a commit is a unique string that identifies it</center>
 <br>
@@ -405,7 +405,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>Now look at our working tree</center>
 <br>
@@ -413,7 +413,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>It currently holds file1 with its edits and file2</center>
 <br>
@@ -421,7 +421,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>but once we have checked out our second commit</center>
 <br>
@@ -429,7 +429,7 @@ custom_theme_compile = true
 
 ---
 
-###### <div align="right" style="color: black">&emsp;&emsp;Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
+###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
 #### <center>our working tree is back to that point in history</center>
 <br>
