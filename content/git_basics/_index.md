@@ -9,3 +9,13 @@ src = "/img/git/git_icon_black.png"
 custom_theme = "mh.scss"
 custom_theme_compile = true
 +++
+
+<br>
+# <center><span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="300"></span> &nbsp;basics</center>
+
+#### <center>WestGrid Summer School</center>
+
+##### <center>Marie-Hélène Burle</center>
+
+###### <center><training@westgrid.ca></center>
+
