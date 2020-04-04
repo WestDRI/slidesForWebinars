@@ -171,7 +171,7 @@ body {
 .reveal pre {
   display: block;
   position: relative;
-  width: 100%;
+  max-width: 100%;
   margin: $blockMargin auto;
   padding: 0.7rem 0.5rem 0.7rem 1.5rem;
   text-align: left;
