@@ -194,7 +194,7 @@ Depending on settings, it might not even be possible to scroll up to the line of
 
 ---
 
-Classic tool to make this easier: <span style="font-size: 1.5rem; font-family: monospace; box-shadow: 0px 0px 6px rgba(0,0,0,0.3); padding: 0.4rem; border-radius: 5%; background-color: #fff">less</span>
+Classic tool to make this easier: {{%c%}}less{{%/c%}}
 
 {{% fragment %}}
 ```sh
@@ -227,7 +227,7 @@ root          14       2  0 Jan06 ?        00:00:00 [idle_inject/0]
 
 ---
 
-But <span style="font-size: 1.5rem; font-family: monospace; box-shadow: 0px 0px 6px rgba(0,0,0,0.3); padding: 0.4rem; border-radius: 5%; background-color: #fff">fzf</span> allows much more:
+But {{%c%}}fzf{{%/c%}} allows much more:
 
 <br>
 ```sh
@@ -250,7 +250,7 @@ man fzf
 <br>
 
 {{% fragment %}}
-I would like to reuse the command <span style="font-size: 1.5rem; font-family: monospace; box-shadow: 0px 0px 6px rgba(0,0,0,0.3); padding: 0.4rem; border-radius: 5%; background-color: #fff">sudo chown marie:marie /media/restic</span> which is in my command line history.
+I would like to reuse the command {{%c%}}sudo chown marie:marie /media/restic{{%/c%}} which is in my command line history.
 {{% /fragment %}}
 
 ---
@@ -274,7 +274,7 @@ history | fzf
 
 ---
 
-Exact match to avoid escaping expressions with <span style="font-size: 1.2rem; font-family: monospace; box-shadow: 0px 0px 6px rgba(0,0,0,0.3); padding: 0.4rem; border-radius: 5%; background-color: #fff">'</span>
+Exact match to avoid escaping expressions with {{%c%}}'{{%/c%}}
 
 <br>
 
@@ -392,7 +392,7 @@ ps -ef | fzf -e
 
 ---
 
-<span style="font-size: 1.2rem; font-family: monospace; box-shadow: 0px 0px 6px rgba(0,0,0,0.3); padding: 0.4rem; border-radius: 5%; background-color: #fff">-m</span> to select multiple entries (with <span style="font-size: 1.2rem; font-family: monospace; box-shadow: 0px 0px 6px rgba(0,0,0,0.3); padding: 0.4rem; border-radius: 5%; background-color: #fff">Tab</span>)
+{{%c%}}-m{{%/c%}} to select multiple entries (with {{%b%}}Tab{{%/b%}})
 
 <br>
 
@@ -414,7 +414,7 @@ ps -ef |
 
 ---
 
-And once we have it, we want to terminate it (with <span style="font-size: 1.2rem; font-family: monospace; box-shadow: 0px 0px 6px rgba(0,0,0,0.3); padding: 0.4rem; border-radius: 5%; background-color: #fff">kill</span>)
+And once we have it, we want to terminate it (with {{%c%}}kill{{%/c%}})
 
 <br>
 
@@ -427,7 +427,7 @@ ps -ef |
 
 ---
 
-If this fails, instead of sending the terminate signal (SIGTERM or 15, which is <span style="font-size: 1.2rem; font-family: monospace; box-shadow: 0px 0px 6px rgba(0,0,0,0.3); padding: 0.4rem; border-radius: 5%; background-color: #fff">kill</span>'s default), we can send the kill signal (SIGKILL or 9)
+If this fails, instead of sending the terminate signal ({{%b%}}SIGTERM{{%/b%}} or {{%b%}}15{{%/b%}}, which is {{%c%}}kill{{%/c%}}'s default), we can send the kill signal ({{%b%}}SIGKILL{{%/b%}} or {{%b%}}9{{%/b%}})
 
 <br>
 
@@ -513,7 +513,7 @@ gcop() {	# search for commit with preview and copy hash
 
 ---
 
-Here is a little trick with <span style="font-size: 1.2rem; font-family: monospace; box-shadow: 0px 0px 6px rgba(0,0,0,0.3); padding: 0.4rem; border-radius: 5%; background-color: #fff">fzf</span> for those with short memory (like me) to get reminded of the keybindings
+Here is a little trick with {{%c%}}fzf{{%/c%}} for those with short memory (like me) to get reminded of the keybindings
 
 <br>
 
@@ -527,11 +527,11 @@ alias kr='grep -E "^map\ " $HOME/.config/ranger/rc.conf |
 ## Alternatives to ranger
 
 <br>
-Written in C: [nnn](https://github.com/jarun/nnn)
+Written in C: {{%c%}}[nnn](https://github.com/jarun/nnn){{%/c%}}
 
-In Go: [lf](https://github.com/gokcehan/lf) (that's lower case "L")
+In Go: {{%c%}}[lf](https://github.com/gokcehan/lf){{%/c%}} (that's lower case {{%b%}}L{{%/b%}})
 
-And in bash: [fff](https://github.com/dylanaraps/fff) (you will have to visit the page to know what the <span style="font-size: 1.2rem; font-family: monospace; box-shadow: 0px 0px 6px rgba(0,0,0,0.3); padding: 0.4rem; border-radius: 5%; background-color: #fff">f</span>s stand for. I'll just say here that it is a *Very* Fast File-manager)
+And in bash: {{%c%}}[fff](https://github.com/dylanaraps/fff){{%/c%}} (you will have to visit the page to know what the 3 {{%b%}}f{{%/b%}} stand for. I'll just say here that it is a *Very* Fast File-manager)
 
 ---
 
@@ -541,9 +541,9 @@ And in bash: [fff](https://github.com/dylanaraps/fff) (you will have to visit th
 
 - [rg](https://github.com/BurntSushi/ripgrep). Stands for "RIP grep"...
 
-- [ag](https://github.com/ggreer/the_silver_searcher). Similar to <span style="font-size: 1.2rem; font-family: monospace; box-shadow: 0px 0px 6px rgba(0,0,0,0.3); padding: 0.4rem; border-radius: 5%; background-color: #fff">rg</span>. You need to have some background in Latin or in chemistry to know right away that it is the *silver* searcher
+- [ag](https://github.com/ggreer/the_silver_searcher). Similar to {{%c%}}rg{{%/c%}}. You need to have some background in Latin or in chemistry to know right away that it is the *silver* searcher
 
-- [fd](https://github.com/sharkdp/fd). If you have always found <span style="font-size: 1.2rem; font-family: monospace; box-shadow: 0px 0px 6px rgba(0,0,0,0.3); padding: 0.4rem; border-radius: 5%; background-color: #fff">find</span>'s syntax awkward, this might be for you. And it is fast. *Very fast*
+- [fd](https://github.com/sharkdp/fd). If you have always found {{%c%}}find{{%/c%}}'s syntax awkward, this might be for you. And it is fast. *Very fast*
 
 - [fasd](https://github.com/clvv/fasd). Similar to autojump, but also works on files. However the project is currently not being developed anymore
 

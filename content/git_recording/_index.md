@@ -42,9 +42,9 @@ custom_theme_compile = true
 First, we need to create a project: this means creating a directory.
 
 {{% fragment %}}
-Let's call it <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git_lesson</span>.
+Let's call it {{<b>}}git_lesson{{</b>}}.
 
-<font color="#e67300"><span style="font-size: 1.7rem;">*Make sure never to use spaces when you use Git. It will make your life a lot easier.*</span></font>
+<span style="font-size: 1.7rem; color: #e67300">*Make sure never to use spaces when you use Git. It will make your life a lot easier.*</span>
 {{% /fragment %}}
 
 ---
@@ -97,6 +97,7 @@ To put our project under version control, we initiate the repository.
 cd git_lesson
 pwd         # this should return the path to git_lesson
 ```
+
 {{% fragment %}}
 <br>
 The directory is empty:
@@ -115,13 +116,16 @@ git init
 ```
 {{% fragment %}}
 <br>
-You now have in your root folder a very important directory: <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; border-radius: 5%; border: 0.5pt solid #d9d9d9; box-shadow: 0px 0px 2.5px rgba(0,0,0,0.3); color: #000000">.git</span>.
+You now have in your root folder a very important directory: {{<b>}}.git{{</b>}}.
 
 ```sh
 ls -a	     # make sure that you can see the .git directory
 ```
 <br>
-*Note: we need the <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">-a</span> flag because files and directories starting with a dot are hidden.*
+{{% /fragment %}}
+
+{{% fragment %}}
+*Note: we need the {{<c>}}-a{{</c>}} flag because files and directories starting with a dot are hidden.*
 {{% /fragment %}}
 
 ---
@@ -179,6 +183,7 @@ touch file1.txt
 touch file2.txt
 touch file3.txt
 ```
+
 {{% fragment %}}
 <br>
 You can see your files if you run:
@@ -230,12 +235,14 @@ git diff
 ```
 {{% /fragment %}}
 
+---
 
-{{% fragment %}}
+### <center>Getting more information on changes</center>
 <br>
-By default, <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git diff</span> uses a pager (e.g. <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">less</span>).<br>
-You scroll down with the <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">Space key</span> and you exit with <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">q</span>.<br>
-{{% /fragment %}}
+
+By default, {{<c>}}git diff{{</c>}} uses a pager (e.g. {{<c>}}less{{</c>}}).<br>
+You scroll down with the {{<b>}}Space{{</b>}} key and you exit with {{<b>}}q{{</b>}}.<br>
+<br>
 
 {{% fragment %}}
 You can circumvent the pager with:
@@ -246,7 +253,7 @@ git --no-pager diff
 
 {{% fragment %}}
 <br>
-<font color="#b30059">Run <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git diff</span>on your repo.</font>
+<font color="#b30059">Run {{<c>}}git diff{{</c>}} on your repo.</font>
 {{% /fragment %}}
 
 ---
@@ -264,17 +271,17 @@ git add -p <file>   # start interactive session to stage hunks of <file>
 
 ### <center>Ignoring files</center>
 <br>
-And to tell Git to ignore files, we add them to the <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; border-radius: 5%; border: 0.5pt solid #d9d9d9; box-shadow: 0px 0px 2.5px rgba(0,0,0,0.3); color: #000000">.gitignore</span> file.
+And to tell Git to ignore files, we add them to the {{<b>}}.gitignore{{</b>}} file.
 
 ---
 
 ### <center><font color="#b30059">Ignore and stage</font></center>
 <br>
 
-Add <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; border-radius: 5%; border: 0.5pt solid #d9d9d9; box-shadow: 0px 0px 2.5px rgba(0,0,0,0.3); color: #000000">file1.txt</span> to <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; border-radius: 5%; border: 0.5pt solid #d9d9d9; box-shadow: 0px 0px 2.5px rgba(0,0,0,0.3); color: #000000">.gitignore</span>.<br>
+Add {{<b>}}file1.txt{{</b>}} to {{<b>}}.gitignore{{</b>}}.<br>
 <br>
-Then stage <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; border-radius: 5%; border: 0.5pt solid #d9d9d9; box-shadow: 0px 0px 2.5px rgba(0,0,0,0.3); color: #000000">file2.txt</span>, <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; border-radius: 5%; border: 0.5pt solid #d9d9d9; box-shadow: 0px 0px 2.5px rgba(0,0,0,0.3); color: #000000">file3.txt</span>, and <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; border-radius: 5%; border: 0.5pt solid #d9d9d9; box-shadow: 0px 0px 2.5px rgba(0,0,0,0.3); color: #000000">.gitignore</span>.<br><br>
-*Note: <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; border-radius: 5%; border: 0.5pt solid #d9d9d9; box-shadow: 0px 0px 2.5px rgba(0,0,0,0.3); color: #000000">.gitignore</span> does not exist yet. You will create it.*
+Then stage {{<b>}}file2.txt{{</b>}}, {{<b>}}file3.txt{{</b>}}, and {{<b>}}.gitignore{{</b>}}.<br><br>
+*Note: {{<b>}}.gitignore{{</b>}} does not exist yet. You will create it.*
 
 ---
 
@@ -284,7 +291,7 @@ What do you see now?
 
 ---
 
-### <center><font color="#b30059">What do you get when you run <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git diff</span>?</font></center>
+### <center><font color="#b30059">What do you get when you run {{<c>}}git diff{{</c>}}?</font></center>
 <br>
 
 {{% fragment %}}
@@ -299,16 +306,15 @@ git diff --staged
 <font color="#b30059">Git it a try.</font>
 {{% /fragment %}}
 
-
 ---
 
 ### <center>Committing</center>
 <br>
-You create a commit with <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git commit</span>. But Git will not allow a commit without a message describing it.
+You create a commit with {{<c>}}git commit{{</c>}}. But Git will not allow a commit without a message describing it.
 <br>
 So if you only run the above command, Git will open a text editor in which you can enter your commit message.<br>
 <br>
-If you want to commit without using a text editor, you must use the <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">-m</span> flag and a message within the command:
+If you want to commit without using a text editor, you must use the {{<c>}}-m{{</c>}} flag and a message within the command:
 <br>
 ```sh
 git commit -m "Your commit message"
@@ -364,4 +370,5 @@ What do you see now?
 ---
 
 <img src="/img/git/git_icon_black.png" style="position: absolute; top: 25%; left: 51.7%; width: 2%;">
+
 # <center><span style="font-variant: small-caps;">Questions?</span></center>

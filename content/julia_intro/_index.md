@@ -182,7 +182,7 @@ C-s		forward search
 
 ---
 
-### <center>Managing packages in <span style="font-family: monospace; font-size: 1.8rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">Pkg</span> mode</center>
+### <center>Managing packages in {{<b>}}Pkg{{</b>}} mode</center>
 <br>
 
 ```jl
@@ -195,7 +195,7 @@ C-s		forward search
 ```
 
 <br>
-By default, installed in <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; border-radius: 5%; border: 0.5pt solid #d9d9d9; box-shadow: 0px 0px 2.5px rgba(0,0,0,0.3); color: #000000">~/.julia</span>
+By default, installed in {{<b>}}~/.julia{{</b>}}
 
 ---
 
@@ -226,7 +226,7 @@ By default, installed in <span style="font-family: monospace; font-size: 1.2rem;
 ### <center>Indexing</center>
 <br>
 
-Indexing starts at <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">1</span>, not <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">0</span>
+Indexing starts at {{<c>}}1{{</c>}}, not {{<c>}}0{{</c>}}
 <br><br>
 
 ```jl
@@ -329,7 +329,7 @@ Nicer looking plots
 > plot(p1, p2, p3, p4)
 ```
 <br>
-The <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; border-radius: 5%; border: 0.5pt solid #d9d9d9; box-shadow: 0px 0px 2.5px rgba(0,0,0,0.3); color: #000000">Plots</span> site has [demos](http://docs.juliaplots.org/latest/)
+The {{<b>}}Plots{{</b>}} site has [demos](http://docs.juliaplots.org/latest/)
 
 ---
 
@@ -456,7 +456,8 @@ $ sbatch job_julialoop.sh
 $ sq
 ```
 
-PD: pending &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R: running
+{{<b>}}PD{{</b>}}: pending &emsp;&emsp;&emsp;&emsp;&emsp;
+{{<b>}}R{{</b>}}: running
 
 ---
 

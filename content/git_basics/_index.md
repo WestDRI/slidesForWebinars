@@ -79,7 +79,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center>This is what happens when we run <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git add file1</span></center>
+#### <center>This is what happens when we run {{<c>}}git add file1{{</c>}}</center>
 <br>
 ![](/img/git/diagrams/git08.png)
 
@@ -87,7 +87,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center><span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; border-radius: 5%; border: 0.5pt solid #d9d9d9; box-shadow: 0px 0px 2.5px rgba(0,0,0,0.3); color: #000000">file1</span> is now ready to be committed</center>
+#### <center>{{<b>}}file1{{</b>}} is now ready to be committed</center>
 <br>
 ![](/img/git/diagrams/git09.png)
 
@@ -95,7 +95,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center>We take a "snapshot": <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git commit -m "&lt;description of the commit&gt;"</span></center>
+#### <center>We take a "snapshot": {{<c>}}git commit -m "&lt;description of the commit&gt;"{{</c>}}</center>
 <br>
 ![](/img/git/diagrams/git10.png)
 
@@ -103,7 +103,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center>We have archived <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; border-radius: 5%; border: 0.5pt solid #d9d9d9; box-shadow: 0px 0px 2.5px rgba(0,0,0,0.3); color: #000000">file1</span> in that particular version</center>
+#### <center>We have archived {{<b>}}file1{{</b>}} in that particular version</center>
 <br>
 ![](/img/git/diagrams/git11.png)
 
@@ -111,7 +111,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center>Of course <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; border-radius: 5%; border: 0.5pt solid #d9d9d9; box-shadow: 0px 0px 2.5px rgba(0,0,0,0.3); color: #000000">file1</span> is still in our working tree</center>
+#### <center>Of course {{<b>}}file1{{</b>}} is still in our working tree</center>
 <br>
 ![](/img/git/diagrams/git12.png)
 
@@ -127,7 +127,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center>What happens if we make an edit to <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; border-radius: 5%; border: 0.5pt solid #d9d9d9; box-shadow: 0px 0px 2.5px rgba(0,0,0,0.3); color: #000000">file1</span>?</center>
+#### <center>What happens if we make an edit to {{<b>}}file1{{</b>}}?</center>
 <br>
 ![](/img/git/diagrams/git14.png)
 
@@ -167,7 +167,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center>For instance, let's stage the edit of <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; border-radius: 5%; border: 0.5pt solid #d9d9d9; box-shadow: 0px 0px 2.5px rgba(0,0,0,0.3); color: #000000">file1</span>: <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git add file1</span></center>
+#### <center>For instance, let's stage the edit of {{<b>}}file1{{</b>}}: {{<c>}}git add file1{{</c>}}</center>
 <br>
 ![](/img/git/diagrams/git16.png)
 
@@ -175,7 +175,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center>For instance, let's stage the edit of <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; border-radius: 5%; border: 0.5pt solid #d9d9d9; box-shadow: 0px 0px 2.5px rgba(0,0,0,0.3); color: #000000">file1</span>: <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git add file1</span></center>
+#### <center>For instance, let's stage the edit of {{<b>}}file1{{</b>}}: {{<c>}}git add file1{{</c>}}</center>
 <br>
 ![](/img/git/diagrams/git17.png)
 
@@ -183,7 +183,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center>Let's now make a new edit to <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; border-radius: 5%; border: 0.5pt solid #d9d9d9; box-shadow: 0px 0px 2.5px rgba(0,0,0,0.3); color: #000000">file1</span></center>
+#### <center>Let's now make a new edit to {{<b>}}file1{{</b>}}</center>
 <br>
 ![](/img/git/diagrams/git18.png)
 
@@ -191,7 +191,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center>As you can see, <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; border-radius: 5%; border: 0.5pt solid #d9d9d9; box-shadow: 0px 0px 2.5px rgba(0,0,0,0.3); color: #000000">file1</span> now shows up in 2 states</center>
+#### <center>As you can see, {{<b>}}file1{{</b>}} now shows up in 2 states</center>
 <br>
 ![](/img/git/diagrams/git18.png)
 
@@ -207,7 +207,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center>We can select hunks with <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git add -p file1</span></center>
+#### <center>We can select hunks with {{<c>}}git add -p file1{{</c>}}</center>
 <br>
 ![](/img/git/diagrams/git19.png)
 
@@ -263,7 +263,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center>For instance, let's make a new edit in <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; border-radius: 5%; border: 0.5pt solid #d9d9d9; box-shadow: 0px 0px 2.5px rgba(0,0,0,0.3); color: #000000">file1</span></center>
+#### <center>For instance, let's make a new edit in {{<b>}}file1{{</b>}}</center>
 <br>
 ![](/img/git/diagrams/git23.png)
 
@@ -271,7 +271,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center>and stage it with <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git add -p file1</span></center>
+#### <center>and stage it with {{<c>}}git add -p file1{{</c>}}</center>
 <br>
 ![](/img/git/diagrams/git24.png)
 
@@ -279,7 +279,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center>and stage it with <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git add -p file1</span></center>
+#### <center>and stage it with {{<c>}}git add -p file1{{</c>}}</center>
 <br>
 ![](/img/git/diagrams/git25.png)
 
@@ -295,7 +295,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center>and stage it with <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git add -p file1</span></center>
+#### <center>and stage it with {{<c>}}git add -p file1{{</c>}}</center>
 <br>
 ![](/img/git/diagrams/git27.png)
 
@@ -303,7 +303,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center>Our previous version of <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; border-radius: 5%; border: 0.5pt solid #d9d9d9; box-shadow: 0px 0px 2.5px rgba(0,0,0,0.3); color: #000000">file1</span> (with <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; border-radius: 5%; border: 0.5pt solid #d9d9d9; box-shadow: 0px 0px 2.5px rgba(0,0,0,0.3); color: #000000">edit3</span>) is lost</center>
+#### <center>Our previous version of {{<b>}}file1{{</b>}} (with {{<b>}}edit3{{</b>}}) is lost</center>
 <br>
 ![](/img/git/diagrams/git28.png)
 
@@ -311,7 +311,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center>Once we commit (<span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git commit -m "&lt;message&gt;"</span>) however</center>
+#### <center>Once we commit ({{<c>}}git commit -m "&lt;message&gt;"{{</c>}}) however</center>
 <br>
 ![](/img/git/diagrams/git29.png)
 
@@ -351,7 +351,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center>Imagine that <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; border-radius: 5%; border: 0.5pt solid #d9d9d9; box-shadow: 0px 0px 2.5px rgba(0,0,0,0.3); color: #000000">file2</span> is one such file</center>
+#### <center>Imagine that {{<b>}}file2{{</b>}} is one such file</center>
 <br>
 ![](/img/git/diagrams/git30.png)
 
@@ -367,7 +367,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center>So we tell Git to ignore it by adding it to <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; border-radius: 5%; border: 0.5pt solid #d9d9d9; box-shadow: 0px 0px 2.5px rgba(0,0,0,0.3); color: #000000">.gitignore</span></center>
+#### <center>So we tell Git to ignore it by adding it to {{<b>}}.gitignore{{</b>}}</center>
 <br>
 ![](/img/git/diagrams/git30.png)
 
@@ -375,7 +375,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center>This can be done in the terminal with <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">echo file2 > .gitignore</span></center>
+#### <center>This can be done in the terminal with {{<c>}}echo file2 > .gitignore{{</c>}}</center>
 <br>
 ![](/img/git/diagrams/git31.png)
 
@@ -383,7 +383,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center><span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; border-radius: 5%; border: 0.5pt solid #d9d9d9; box-shadow: 0px 0px 2.5px rgba(0,0,0,0.3); color: #000000">file2</span> was not deleted, but it has become invisible to Git</center>
+#### <center>{{<b>}}file2{{</b>}} was not deleted, but it has become invisible to Git</center>
 <br>
 ![](/img/git/diagrams/git31.png)
 
@@ -391,7 +391,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center>In the meantime, we now have a new file: <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; border-radius: 5%; border: 0.5pt solid #d9d9d9; box-shadow: 0px 0px 2.5px rgba(0,0,0,0.3); color: #000000">.gitignore</span></center>
+#### <center>In the meantime, we now have a new file: {{<b>}}.gitignore{{</b>}}</center>
 <br>
 ![](/img/git/diagrams/git31.png)
 
@@ -440,7 +440,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center>We stash with <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git stash push</span></center>
+#### <center>We stash with {{<c>}}git stash push{{</c>}}</center>
 <br>
 ![](/img/git/diagrams/git32.png)
 
@@ -472,7 +472,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center>We do this with: <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git checkout &lt;commit hash 2<sup>nd</sup> commit&gt;</span></center>
+#### <center>We do this with: {{<c>}}git checkout &lt;commit hash 2<sup>nd</sup> commit&gt;{{</c>}}</center>
 <br>
 ![](/img/git/diagrams/git33.png)
 
@@ -536,7 +536,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center>with <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git checkout &lt;commit hash 3<sup>rd</sup> commit&gt;</span></center>
+#### <center>with {{<c>}}git checkout &lt;commit hash 3<sup>rd</sup> commit&gt;{{</c>}}</center>
 <br>
 ![](/img/git/diagrams/git35.png)
 
@@ -552,6 +552,6 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-#### <center>Finally, to re-apply our stash, we run <span style="font-family: monospace; font-size: 1.2rem; padding: 0.4rem; box-shadow: 0px 0px 3px rgba(0,0,0,0.3); border-radius: 5%; background-color: #fff; color: #000000">git stash pop</span></center>
+#### <center>Finally, to re-apply our stash, we run {{<c>}}git stash pop{{</c>}}</center>
 <br>
 ![](/img/git/diagrams/git31.png)
