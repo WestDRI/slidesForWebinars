@@ -1,7 +1,7 @@
 +++
 title = "git_recording"
 outputs = ["Reveal"]
-[logowgfix]
+[logowg]
 src = "/img/wg_white_removed_medium.png"
 [logogithalfpage]
 src = "/img/git/git_icon_black.png"

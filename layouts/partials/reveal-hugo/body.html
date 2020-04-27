@@ -1,69 +1,20 @@
 <!-- LOGO -->
 
-<!-- wg and cc logo which change size -->
-<img id="logowg" src="{{ .Param "logowg.src" }}" alt="{{ .Param "logowg.alt" }}">
-<img id="logocc" src="{{ .Param "logocc.src" }}" alt="{{ .Param "logocc.alt" }}">
-
-<!-- js for slide transition -->
-<script type="text/javascript">
-    Reveal.addEventListener('slidechanged', function(event) {
-        if (event.indexh == 0) {
-  	  document.getElementById('logowg').style.position='absolute'
-  	  document.getElementById('logowg').style.top='0.5%'
-  	  document.getElementById('logowg').style.left='0.5%'
-  	  document.getElementById('logowg').style.width='20%'
-  	  document.getElementById('logocc').style.position='absolute'
-  	  document.getElementById('logocc').style.top='10%'
-  	  document.getElementById('logocc').style.left='7.5%'
-  	  document.getElementById('logocc').style.width='15%'
-        }
-        if (event.indexh != 0) {
-  	  document.getElementById('logowg').style.position='absolute'
-  	  document.getElementById('logowg').style.top='0.5%'
-  	  document.getElementById('logowg').style.left='0.5%'
-  	  document.getElementById('logowg').style.width='13%'
-  	  document.getElementById('logocc').style.position='absolute'
-  	  document.getElementById('logocc').style.top='7%'
-  	  document.getElementById('logocc').style.left='5%'
-  	  document.getElementById('logocc').style.width='9%'
-        }
-    });
-</script>
-
-<!-- js for page refresh -->
-<script type="text/javascript">
-    Reveal.addEventListener('ready', function(event) {
-        if (event.indexh == 0) {
-  	  document.getElementById('logowg').style.position='absolute'
-  	  document.getElementById('logowg').style.top='0.5%'
-  	  document.getElementById('logowg').style.left='0.5%'
-  	  document.getElementById('logowg').style.width='20%'
-  	  document.getElementById('logocc').style.position='absolute'
-  	  document.getElementById('logocc').style.top='10%'
-  	  document.getElementById('logocc').style.left='7.5%'
-  	  document.getElementById('logocc').style.width='15%'
-        }
-        if (event.indexh != 0) {
-  	  document.getElementById('logowg').style.position='absolute'
-  	  document.getElementById('logowg').style.top='0.5%'
-  	  document.getElementById('logowg').style.left='0.5%'
-  	  document.getElementById('logowg').style.width='13%'
-  	  document.getElementById('logocc').style.position='absolute'
-  	  document.getElementById('logocc').style.top='7%'
-  	  document.getElementById('logocc').style.left='5%'
-  	  document.getElementById('logocc').style.width='9%'
-        }
-    });
-  </script>
-
 <!-- wg logo which does not change size -->
-<img id="logowgfix" src="{{ .Param "logowgfix.src" }}">
+<img id="logowg" src="{{ .Param "logowg.src" }}">
 <style>
-  #logowgfix {
+  #logowg {
     position: absolute;
-    top: 2%;
-    left: 1.5%;
-    width: 15%;
+    top: 1%;
+    left: 0;
+    width: 13%;
+  }
+</style>
+
+</style>
+
+<style>
+    position: absolute;
   }
 </style>
 
@@ -72,8 +23,8 @@
 <style>
   #logogit {
     position: absolute;
-    top: 4.4%;
-    left: 14.15%;
+    top: 3.2%;
+    left: 10.9%;
     width: 0.8%;
   }
 </style>
@@ -83,8 +34,8 @@
 <style>
   #logogithalfpage {
     position: absolute;
-    top: 3.4%;
-    left: 14.11%;
+    top: 2.1%;
+    left: 10.9%;
     width: 0.8%;
   }
 </style>
@@ -97,7 +48,7 @@
   Use left/right keys to change slide
 </div>
 
-<!-- js to make info disappear at slide transition -->
+<!-- js to make INFO disappear at slide transition -->
 <script type="text/javascript">
   Reveal.addEventListener('slidechanged', function(event) {
       document.getElementById('navinfo').style.display='none'
