@@ -80,3 +80,22 @@
       document.getElementById('navinfo').style.display='none'
   });
 </script>
+
+<!-- allow mathjax in all files for rendering of latex math expressions -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+<script>
+  MathJax = {
+      tex: {
+          inlineMath: [
+              ['$', '$'], ['\\(', '\\)']
+          ],
+          processEscapes: true,
+          processEnvironments: true
+      },
+      options: {
+          skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+  };
+</script>
