@@ -10,11 +10,17 @@ custom_theme = "mh.scss"
 custom_theme_compile = true
 +++
 
-# Machine learning with Julia and the flux package
+<br>
+## <center>Machine learning in Julia with</center>
 
-## Marie-Helene Burle
+{{<img src="/img/flux/flux_tall.png" title="" width="60%" line-height="0.5rem">}}
+{{</img>}}
 
-### training@westgrid.ca
+#### <center>Marie-Hélène Burle</center>
+
+##### <center><training@westgrid.ca></center>
+
+###### <center>*May 13, 2020*</center>
 
 ---
 
