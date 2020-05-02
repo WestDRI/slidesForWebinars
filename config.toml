@@ -27,7 +27,7 @@ uglyURLs = true
 
 [params]
   favicon_32 = "/img/favicon.png"
-  
+
 [markup]
   defaultMarkdownHandler = "blackfriday"
   [markup.highlight]
