@@ -377,3 +377,16 @@ img[alt=logo] {
 //   background-color: currentColor;
 //   padding: 5px;
 // }
+
+figure {
+  margin: 0;
+  padding: 0;
+  // line-height: 0rem;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.0rem;
+  margin: 0;
+}
