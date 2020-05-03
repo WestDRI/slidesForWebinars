@@ -24,3 +24,8 @@ custom_theme_compile = true
 
 ---
 
+---
+
+<img src="/img/flux/flux_icon.png" style="position: absolute; top: 22%; left: 51.2%; width: 4.5%;">
+
+## <center style="font-size: 5.0rem; font-variant: small-caps">Questions?</center>
