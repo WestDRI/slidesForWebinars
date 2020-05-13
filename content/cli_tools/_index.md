@@ -15,7 +15,7 @@ custom_theme_compile = true
 
 #### <center>Marie-Hélène Burle</center>
 
-##### <center><training@westgrid.ca></center>
+###### <center><training@westgrid.ca></center>
 
 ###### <center>*February 19, 2020*</center>
 
