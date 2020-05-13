@@ -470,3 +470,7 @@ Running parallel loop on 32 cores
 ```
 <br>
 <center>89% faster</center>
+
+---
+
+<center><img src="/img/jl/jl_question.png" width="350"></center>
