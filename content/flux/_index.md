@@ -11,10 +11,7 @@ custom_theme_compile = true
 +++
 
 <br>
-## <center>Machine learning in Julia with</center>
-
-{{<img src="/img/ml/flux_tall.png" title="" width="60%" line-height="0.5rem">}}
-{{</img>}}
+## <center>Machine learning in <span style="vertical-align: middle"><img src="/img/ml/julia.png" " alt="" height="" width="130"></span> with</center>{{<img src="/img/ml/flux_tall.png" title="" width="60%" line-height="0.5rem">}}{{</img>}}
 
 #### <center>Marie-Hélène Burle</center>
 
