@@ -110,15 +110,19 @@ body {
 .reveal ul {
   // display: inline-block;
   text-align: left;
-  margin: 0 0 0 1rem;
+  // margin: 0 0 0 1rem;
 }
 
 .reveal ol {
   list-style-type: decimal;
+  line-height: 3.5rem;
+  margin: 2.0rem;
 }
 
 .reveal ul {
-  list-style-type: disc;
+  list-style-type: circle;
+  line-height: 3.5rem;
+  margin: 2.0rem;
 }
 
 .reveal ul ul {
