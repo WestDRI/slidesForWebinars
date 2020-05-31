@@ -20,6 +20,22 @@ custom_theme_compile = true
 
 ---
 
+#### <center>Our first script</center>
+<br>
+
+In this course, we will use Covid-19 data to become familiar with Julia's syntax and functioning.
+
+In this lesson, we will write our first Julia script to load and transform data.<br>
+As we do so, we will discuss variables and types in Julia.
+
+{{<challenge>}}
+Create a file (name and location of your choice) with the extension {{%b%}}.jl{{%/b%}}
+{{</challenge>}}
+
+Julia scripts are text files and—by convention—have that extension.
+
+---
+
 #### <center>Load packages</center>
 <br>
 First, we need to load some packages.<br>
@@ -29,19 +45,11 @@ This will take some time as Julia will pre-compile newly installed or updated pa
 using CSV
 using DataFrames
 using Dates
+using JLD
 ```
 <br>
 {{%b%}}Dates{{%/b%}} is a package from the standard Julia library (it was installed when you installed Julia).<br>
 The other packages are packages that [you should have installed](https://westgrid-julia.netlify.app/school/jl-05-pkg.html).
-
----
-
-#### <center>Load the data</center>
-<br>
-
-Then, we need to load the data.
-
-This will give us an opportunity to talk about variables and types in Julia.
 
 ---
 
@@ -118,13 +126,7 @@ I mentioned that our first variable was a *string*.
 
 So let's talk about types in Julia.
 
----
-
-## <center>Types</center>
-<br>
-
-Variables don't have types since they are simply names bound to values.<br>
-*Values* have types.
+Note that variables don't have types since they are simply names bound to values. *Values* have types.
 
 ---
 
@@ -147,13 +149,25 @@ Type safety done at runtime
 Julia's type system is *dynamic* (types are unknown until runtime), but types *can* be declared, optionally bringing the advantages of static type systems.
 <br><br><br>
 This gives users the freedom to choose between an easy and convenient language, or a clearer, faster, and more robust one (or a combination of the two).
+<br><br>
+To know the type of an object, use {{%c%}}typeof(){{%/c%}}
 
 ---
 
 ## <center>Type declaration</center>
 <br>
 
+Done with {{%c%}}::{{%/c%}}
 
+```julia
+<value>::<type>
+```
+<br>
+*Example:*
+
+```julia
+2::Int
+```
 
 ---
 
@@ -173,45 +187,116 @@ dat = DataFrame(CSV.File(file))
 #### <center>Let's explore the data</center>
 <br>
 
+Some useful functions:
 ```julia
+typeof(dat)
+
+names(dat)
+
 size(dat)
 nrow(dat)
 ncol(dat)
 ```
 
-```julia
-dat
-typeof(dat)
-```
+---
+
+#### <center>Indexing</center>
+<br>
+
+Without copying (changes made to it **will** change {{%c%}}dat{{%/c%}}):
 
 ```julia
+dat[!, 1]
+dat[!, "Province/State"]
+dat[!, :"Province/State"]
 dat."Province/State"
+```
+<br>
+Making a copy (changes made to it **will not** change {{%c%}}dat{{%/c%}}):
+
+```julia
+dat[:, 1]
+```
+
+---
+
+#### <center>Indexing</center>
+<br>
+
+{{<challenge>}}
+How could you index the 3<sup>rd</sup> row without copying?<br>
+How could you index the 3<sup>rd</sup> row making a copy?<br>
+The cell of the 2<sup>nd</sup> row and 4<sup>th</sup> column?<br>
+(note: this does not make a copy)
+{{</challenge>}}
+
+---
+
+#### <center>Converting type</center>
+<br>
+
+```julia
 typeof(dat."Province/State")
 ```
+
+This weird type is not what we want. We want a {{%c%}}String{{%/c%}}
+
+{{%c%}}string(){{%/c%}} converts a value to a {{%c%}}String{{%/c%}}
+
+<br>
+Before applying it to our vector, let's play with this function a little:
+
+```julia
+string([1, 2, 3])
+```
+
+{{<challenge>}}
+Is this what we want?<br>
+How can we address this?
+{{</challenge>}}
+
+---
+
+#### <center>Converting type</center>
+<br>
+
+{{<challenge>}}
+Which form of indexing do we want to use to convert our column?<br>
+Write the code to convert our first column to {{%c%}}String{{%/c%}}<br>
+Are there other columns with weird types we need to convert?
+{{</challenge>}}
 
 ---
 
 #### <center>Select and order columns</center>
 <br>
 
+Let's get rid of columns we won't use and bring the country column to the left:
+
 ```julia
 select!(dat, vcat(2, 1, collect(5:ncol(dat))))
 ```
+
+{{<challenge>}}
+How does {{%c%}}!{{%/c%}} do?<br>
+Why are we using it here?<br>
+What does {{%c%}}vcat(){{%/c%}} do?<br>
+How can you find out?<br>
+Try to understand this line of code by playing with it
+{{</challenge>}}
 
 ---
 
 #### <center>Rename columns</center>
 <br>
 
-```julia
-:province == Symbol("province")
-typeof(:province)
-```
+{{%c%}}rename(){{%/c%}} uses dictionaries:
 
+<br>
 ```julia
 rename!(dat, Dict(1 => :country, 2 => :province))
 ```
-
+or
 ```julia
 rename!(dat, Dict([(1, :country), (2, :province)]))
 ```
@@ -220,6 +305,8 @@ rename!(dat, Dict([(1, :country), (2, :province)]))
 
 #### <center>Long format</center>
 <br>
+
+Let's transform our data frame into long format:
 
 ```julia
 datlong = stack(dat, Not([:country, :province]),
@@ -232,9 +319,14 @@ datlong = stack(dat, Not([:country, :province]),
 #### <center>Convert date</center>
 <br>
 
+This does not look good:
+
 ```julia
 datlong.date
 ```
+
+<br>
+We want the date to look like {{%c%}}YYYY-MM-DD{{%/c%}} and to be of type {{%c%}}Date{{%/c%}}
 
 ```julia
 datlong.date = Date.(replace.(string.(datlong.date),
@@ -242,8 +334,50 @@ datlong.date = Date.(replace.(string.(datlong.date),
                      "m/dd/yy")
 ```
 
+---
+
+#### <center>Our final data frame</center>
+<br>
+
+Let's have a look at our final cleaned data frame:
+
 ```julia
 datlong
+```
+
+---
+
+#### <center>Save object</center>
+<br>
+
+In the next session, you will start from here.
+
+There are various approaches to do this:
+
+- you could re-run this script before starting to run the next one
+- you could load this script within the next one (with {{%c%}}include("this_script.jl"){{%/c%}})
+- you could save {{%c%}}datlong{{%/c%}} in a Julia data file and load it in your next script
+
+Let's do that third option.
+
+---
+
+#### <center>Save object</center>
+<br>
+
+For this, we are using [the package JLD](https://github.com/JuliaIO/JLD.jl) which allows to save and load Julia data in {{%b%}}.jld{{%/b%}} files.
+
+Note that a single {{%b%}}.jld{{%/b%}} file can contain several objects.<br><br>
+
+```julia
+save("covid.jld", "confirmed", datlong)
+```
+<br>
+This will save the file {{%b%}}covid.jld{{%/b%}} in the working directory of the REPL.<br>
+You can save it elsewhere by giving an absolute or relative path instead of just a file name. For instance, on my machine, this is where I am saving it:
+
+```julia
+save("../../data/covid.jld", "confirmed", datlong)
 ```
 
 ---
