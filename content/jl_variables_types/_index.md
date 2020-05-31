@@ -150,7 +150,7 @@ Julia's type system is *dynamic* (types are unknown until runtime), but types *c
 <br><br><br>
 This gives users the freedom to choose between an easy and convenient language, or a clearer, faster, and more robust one (or a combination of the two).
 <br><br>
-To know the type of an object, use {{%c%}}typeof(){{%/c%}}
+To know the type of an object, use {{%c%}}typeof{{%/c%}}
 
 ---
 
@@ -239,9 +239,9 @@ The cell of the 2<sup>nd</sup> row and 4<sup>th</sup> column?<br>
 typeof(dat."Province/State")
 ```
 
-This weird type is not what we want. We want a {{%c%}}String{{%/c%}}
+This weird type is not what we want. We want a {{%b%}}String{{%/b%}}
 
-{{%c%}}string(){{%/c%}} converts a value to a {{%c%}}String{{%/c%}}
+The function {{%c%}}string{{%/c%}} converts a value to a {{%b%}}String{{%/b%}}
 
 <br>
 Before applying it to our vector, let's play with this function a little:
@@ -262,7 +262,7 @@ How can we address this?
 
 {{<challenge>}}
 Which form of indexing do we want to use to convert our column?<br>
-Write the code to convert our first column to {{%c%}}String{{%/c%}}<br>
+Write the code to convert our first column to {{%b%}}String{{%/b%}}<br>
 Are there other columns with weird types we need to convert?
 {{</challenge>}}
 
@@ -280,7 +280,7 @@ select!(dat, vcat(2, 1, collect(5:ncol(dat))))
 {{<challenge>}}
 How does {{%c%}}!{{%/c%}} do?<br>
 Why are we using it here?<br>
-What does {{%c%}}vcat(){{%/c%}} do?<br>
+What does {{%c%}}vcat{{%/c%}} do?<br>
 How can you find out?<br>
 Try to understand this line of code by playing with it
 {{</challenge>}}
@@ -290,7 +290,7 @@ Try to understand this line of code by playing with it
 #### <center>Rename columns</center>
 <br>
 
-{{%c%}}rename(){{%/c%}} uses dictionaries:
+The function {{%c%}}rename{{%/c%}} uses dictionaries:
 
 <br>
 ```julia
@@ -326,7 +326,7 @@ datlong.date
 ```
 
 <br>
-We want the date to look like {{%c%}}YYYY-MM-DD{{%/c%}} and to be of type {{%c%}}Date{{%/c%}}
+We want the date to look like {{%b%}}YYYY-MM-DD{{%/b%}} and to be of type {{%b%}}Date{{%/b%}}
 
 ```julia
 datlong.date = Date.(replace.(string.(datlong.date),
