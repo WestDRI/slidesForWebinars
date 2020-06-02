@@ -80,11 +80,15 @@ The [Julia Style Guide](https://docs.julialang.org/en/v1/manual/style-guide/#Sty
 ## <center>Variables</center>
 <br>
 
-The first variable we are creating is bound to a string.<br><br>
+The first variable we are creating is bound to a string.<br>
 
 That string is the path (in your system) of the file {{<b>}}time_series_covid19_confirmed_global.csv{{</b>}}<span style="font-size: 1.5rem;"><sup>1</sup></span>
 
-*relative* to the directory in which your Julia session is running <br> **or** <br> its *absolute* path.<br><br>
+*relative* to the directory in which your Julia session is running <br> **or** <br> its *absolute* path.
+
+{{<challenge>}}
+How can you easily tell in which directory your Julia session is running?
+{{</challenge>}}
 
 <span style="font-size: 1.5rem;"><sup>1</sup>(Part of the data that <a href="https://westgrid-julia.netlify.app/school/jl-03-install.html">you should have installed</a>.)</span>
 
@@ -99,7 +103,7 @@ This is what it looks like *on my system* <br> (replace it with the proper path 
 file = "../../data/covid/csse_covid_19_data/csse_covid_19_time_series/" *
     "time_series_covid19_confirmed_global.csv"
 ```
-<br><br>
+<br>
 *Note:*<br>
 {{%c%}}*{{%/c%}} in Julia allows string concatenation, so I used it to break the very long path name. You don't have to do that.
 
@@ -133,11 +137,11 @@ Note that variables don't have types since they are simply names bound to values
 ## <center>2 main type systems</center>
 <br>
 
-##### Static type checking
+##### Static type-checking
 
 Type safety (catching errors of inadequate type) performed at compile time
 <br><br>
-##### Dynamic type checking
+##### Dynamic type-checking
 
 Type safety done at runtime
 
@@ -261,7 +265,7 @@ How can we address this?
 <br>
 
 {{<challenge>}}
-Which form of indexing do we want to use to convert our column?<br>
+Which form of indexing (with or without copy) do we want to use to convert our column?<br>
 Write the code to convert our first column to {{%b%}}String{{%/b%}}<br>
 Are there other columns with weird types we need to convert?
 {{</challenge>}}
@@ -278,10 +282,9 @@ select!(dat, vcat(2, 1, collect(5:ncol(dat))))
 ```
 
 {{<challenge>}}
-How does {{%c%}}!{{%/c%}} do?<br>
+What does {{%c%}}!{{%/c%}} do?<br>
 Why are we using it here?<br>
-What does {{%c%}}vcat{{%/c%}} do?<br>
-How can you find out?<br>
+How can you find out what {{%c%}}vcat{{%/c%}} does?<br>
 Try to understand this line of code by playing with it
 {{</challenge>}}
 
@@ -365,15 +368,14 @@ Let's do that third option.
 #### <center>Save object</center>
 <br>
 
-For this, we are using [the package JLD](https://github.com/JuliaIO/JLD.jl) which allows to save and load Julia data in {{%b%}}.jld{{%/b%}} files.
+For this, we are using the package [JLD](https://github.com/JuliaIO/JLD.jl) which allows to save and load Julia data in {{%b%}}.jld{{%/b%}} files.
 
-Note that a single {{%b%}}.jld{{%/b%}} file can contain several objects.<br><br>
+Note that a single {{%b%}}.jld{{%/b%}} file can contain several objects.<br>
 
 ```julia
 save("covid.jld", "confirmed", datlong)
 ```
-<br>
-This will save the file {{%b%}}covid.jld{{%/b%}} in the working directory of the REPL.<br>
+This will save the file {{%b%}}covid.jld{{%/b%}} in the working directory of the REPL.<br><br>
 You can save it elsewhere by giving an absolute or relative path instead of just a file name. For instance, on my machine, this is where I am saving it:
 
 ```julia
