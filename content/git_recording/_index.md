@@ -41,10 +41,14 @@ custom_theme_compile = true
 <br>
 First, we need to create a project: this means creating a directory.
 
-{{% fragment %}}
+{{%fragment%}}
 Let's call it {{<b>}}git_lesson{{</b>}}.
+{{%/fragment%}}
 
-<span style="font-size: 1.7rem; color: #e67300">*Make sure never to use spaces when you use Git. It will make your life a lot easier.*</span>
+<br>
+
+{{% fragment %}}
+<span style="font-size: 1.7rem; color: #e67300"><b>*Make sure never to use spaces when you use Git. It will make your life a lot easier.*</b></span>
 {{% /fragment %}}
 
 ---
