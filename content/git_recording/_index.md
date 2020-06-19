@@ -470,6 +470,8 @@ You can also look up the [Git book](https://git-scm.com/book/en/v2) and countles
 
 ---
 
-<img src="/img/git/git_icon_black.png" style="position: absolute; top: 25%; left: 52%; width: 2%;">
+<img src="/img/git/git_icon_black.png" style="position: absolute; top: 15%; left: 52%; width: 2%;">
 
 # <center><span style="font-variant: small-caps;">Questions?</span></center>
+<br><br>
+Bring all your questions to [tomorrow morning's live session](https://westgrid-cli.netlify.app/school/git-08-recording.html). See you there!
