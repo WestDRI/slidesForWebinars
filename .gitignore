@@ -3,3 +3,6 @@ resources/
 !*.png
 !*.jpg
 !workinprogress.svg
+
+static/slidedoc/note_on_hugoreveal_theme.org
+static/slidedoc/todo_before_a_webinar.org
