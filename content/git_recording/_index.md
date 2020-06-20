@@ -339,6 +339,30 @@ After you committed, Git gave you the short form of the hash of your first commi
 
 ---
 
+##### <center>SHA-1 checksum</center>
+<br>
+
+*Note*
+
+You can get the hash of any ref name (e.g. master, HEAD, etc.) with these commands:
+
+```sh
+# Get the full hash
+git rev-parse <refname>
+
+# Get the short version of the hash
+git rev-parse --short <refname>
+
+# Get <n> digits of the hash
+# Note that Git will always at least give you the necessary digits to uniquely identify the hash
+git rev-parse --short=<n> <refname>
+
+# Show the entire hash with the digits necessary to uniquely identify it in color
+git rev-parse <refname> | GREP_COLORS='ms=34;1' grep $(git rev-parse --short=0 <refname>)
+```
+
+---
+
 #### <center><font color="#b30059">Inspect your repository again</font></center>
 <br>
 <center>What do you see now?</center>
