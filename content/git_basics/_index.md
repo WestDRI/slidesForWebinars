@@ -520,7 +520,7 @@ custom_theme_compile = true
 
 ###### <div align="right" style="color: black">Understanding <span style="vertical-align: middle"><img src="/img/git/git_logo.png" alt="" height="" width="60"></span></div>
 <br>
-###### <center>Then you can checkout the commit: {{<c>}}git checkout &lt;hash 2<sup>nd</sup> commit&gt; .{{</c>}}</center>
+###### <center>Then you can checkout the commit: {{<c>}}git checkout &lt;hash 2<sup>nd</sup> commit&gt;{{</c>}}</center>
 <br>
 ![](/img/git/diagrams/git33.png)
 
