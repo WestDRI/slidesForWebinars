@@ -179,8 +179,6 @@ body {
   margin: $blockMargin auto;
   padding: 0.7rem 0.5rem 0.7rem 1.5rem;
   text-align: left;
-  font-size: 1.2rem;
-  font-family: monospace;
   line-height: 2.5rem;
   word-wrap: break-word;
   box-shadow: 0px 0px 6px rgba(0,0,0,0.3);
@@ -189,9 +187,13 @@ body {
 .reveal code {
   font-family: monospace;
   text-transform: none;
+  font-size: 1.2rem;
+  background-color: #fff;
+  padding: 0.1rem;
 }
 
 .reveal pre code {
+  background-color: #fff;
   display: block;
   padding: 5px;
   overflow: auto;
