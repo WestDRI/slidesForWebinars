@@ -5,6 +5,9 @@ outputs = ["Reveal"]
 src = "/img/wg_white_removed_medium.png"
 [logojl]
 src = "/img/jl/jl_dots.png"
+[backlink]
+href = "https://westgrid-julia.netlify.app/webinars/intro/"
+txt = "Back to Webinar Page"
 [reveal_hugo]
 custom_theme = "mh.scss"
 custom_theme_compile = true
