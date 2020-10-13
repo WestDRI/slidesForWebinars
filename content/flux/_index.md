@@ -5,6 +5,9 @@ outputs = ["Reveal"]
 src = "/img/wg_white_removed_medium.png"
 [logoflux]
 src = "/img/ml/flux_icon.png"
+[backlink]
+href = "https://westgrid-ml.netlify.app/webinars/flux/"
+txt = "Back to Webinar Page"
 [reveal_hugo]
 custom_theme = "mh.scss"
 custom_theme_compile = true
