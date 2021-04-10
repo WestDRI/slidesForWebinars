@@ -18,7 +18,7 @@ custom_theme_compile = true
 
 #### <center>Marie-Hélène Burle</center>
 
-###### <center><training@westgrid.ca></center>
+###### <center>{{<a "mailto:training@westgrid.ca" "training@westgrid.ca">}}</center>
 
 ###### <center>*May 13, 2020*</center>
 
@@ -55,7 +55,7 @@ Rather than coding all the possible ways—pixel by pixel—that a picture can r
 ##### <center>Biological neuron</center>
 <br>
 {{<img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Neuron.svg" title="" width="100%" line-height="0.5rem">}}
-Schematic from <a href="https://commons.wikimedia.org/w/index.php?curid=1474927">Dhp1080, Wikipedia</a>
+Schematic from <a href="https://commons.wikimedia.org/w/index.php?curid=1474927" target="_blank">Dhp1080, Wikipedia</a>
 {{</img>}}
 
 <br>
@@ -66,7 +66,7 @@ Schematic from <a href="https://commons.wikimedia.org/w/index.php?curid=1474927"
 ##### <center>Artificial neuron</center>
 
 {{<img src="/img/ml/artificial_neuron_nw.png" title="" width="65%" line-height="0.5rem">}}
-Modified from <a href="https://royalsocietypublishing.org/doi/10.1098/rsta.2019.0163">O.C. Akgun & J. Mei 2019</a>
+Modified from <a href="https://royalsocietypublishing.org/doi/10.1098/rsta.2019.0163" target="_blank">O.C. Akgun & J. Mei 2019</a>
 {{</img>}}
 
 <center>Analogous design</center>
@@ -79,7 +79,7 @@ through an activation function before yielding a numeric output
 
 {{<img src="/img/ml/neuron_grayanatomy_nw.png" title="" width="80%" line-height="0.5rem">}}
 <br>a: axon, c: dendrites <br><br><br>
-Drawing from stained neuron from <a href="https://en.wikipedia.org/wiki/Gray's_Anatomy">Gray's Anatomy</a>
+Drawing from stained neuron from <a href="https://en.wikipedia.org/wiki/Gray's_Anatomy" target="_blank">Gray's Anatomy</a>
 {{</img>}}
 
 <center>The actual level of branching is vastly superior</center>
@@ -90,7 +90,7 @@ Drawing from stained neuron from <a href="https://en.wikipedia.org/wiki/Gray's_A
 
 {{<img src="/img/ml/brain_neurons.jpg" title="" width="90%" line-height="0.5rem">}}
 <br>Neurons (in green) in mouse cortex; the dark branches are blood vessels <br><br><br>
-Image by <a href="https://news.berkeley.edu/2020/03/19/high-speed-microscope-captures-fleeting-brain-signals/">Na Ji, UC Berkeley</a>
+Image by <a href="https://news.berkeley.edu/2020/03/19/high-speed-microscope-captures-fleeting-brain-signals/" target="_blank">Na Ji, UC Berkeley</a>
 {{</img>}}
 
 <center>The human brain has 65–90 billion of them</center>
@@ -109,7 +109,7 @@ and it is a system with emergent properties
 ##### <center>Artificial neural network (ANN)</center><br>
 
 {{<img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Colored_neural_network.svg" title="" width="%" line-height="0.5rem">}}
-From <a href="https://commons.wikimedia.org/w/index.php?curid=24913461">Glosser.ca, Wikipedia</a>
+From <a href="https://commons.wikimedia.org/w/index.php?curid=24913461" target="_blank">Glosser.ca, Wikipedia</a>
 {{</img>}}
 <br>
 <center>**Fully-connected**, **single-layer**, **feedforward** neural network</center>
@@ -120,7 +120,7 @@ From <a href="https://commons.wikimedia.org/w/index.php?curid=24913461">Glosser.
 
 {{<img src="/img/ml/nn_multi_layer_nw.png" title="" width="90%" line-height="0.5rem">}}
 <br>Neural network with 2 hidden layers <br><br><br>
-From <a href="https://themaverickmeerkat.com/2020-01-10-TicTacToe/">The Maverick Meerkat</a>
+From <a href="https://themaverickmeerkat.com/2020-01-10-TicTacToe/" target="_blank">The Maverick Meerkat</a>
 {{</img>}}
 
 <center>**Fully-connected**, **feedforward**, **deep** neural network</center>
@@ -130,7 +130,7 @@ From <a href="https://themaverickmeerkat.com/2020-01-10-TicTacToe/">The Maverick
 ##### <center>Threshold potential</center>
 
 {{<img src="/img/ml/all_none_law_nw.png" title="" width="48%" line-height="0.5rem">}}
-Modified from <a href="https://commons.wikimedia.org/w/index.php?curid=78013076">Blacktc, Wikimedia</a>
+Modified from <a href="https://commons.wikimedia.org/w/index.php?curid=78013076" target="_blank">Blacktc, Wikimedia</a>
 {{</img>}}
 <br>
 <center>The information is an all-or-nothing electrochemical pulse or action potential</center>
@@ -141,7 +141,7 @@ Greater stimuli don't produce stronger signals but increase firing frequency
 ##### <center>Artificial neuron</center>
 <br>
 {{<img src="/img/ml/artificial_neuron_nw.png" title="" width="65%" line-height="0.5rem">}}
-Modified from <a href="https://royalsocietypublishing.org/doi/10.1098/rsta.2019.0163">O.C. Akgun & J. Mei 2019</a>
+Modified from <a href="https://royalsocietypublishing.org/doi/10.1098/rsta.2019.0163" target="_blank">O.C. Akgun & J. Mei 2019</a>
 {{</img>}}
 
 ---
@@ -149,7 +149,7 @@ Modified from <a href="https://royalsocietypublishing.org/doi/10.1098/rsta.2019.
 ##### <center>Activation functions</center>
 
 {{<img src="/img/ml/act_func_nw.png" title="" width="50%" line-height="0.5rem">}}
-From <a href="https://arxiv.org/abs/1908.08681">Diganta Misra 2019</a>
+From <a href="https://arxiv.org/abs/1908.08681" target="_blank">Diganta Misra 2019</a>
 {{</img>}}
 
 <center>Many activation functions have been tried</center>
@@ -160,7 +160,7 @@ Choices based on problem & available computing budget
 ##### <center>Artificial neuron</center>
 <br>
 {{<img src="/img/ml/artificial_neuron_nw.png" title="" width="65%" line-height="0.5rem">}}
-Modified from <a href="https://royalsocietypublishing.org/doi/10.1098/rsta.2019.0163">O.C. Akgun & J. Mei 2019</a>
+Modified from <a href="https://royalsocietypublishing.org/doi/10.1098/rsta.2019.0163" target="_blank">O.C. Akgun & J. Mei 2019</a>
 {{</img>}}
 
 ---
@@ -251,7 +251,7 @@ Minimizing it
 ##### <center>Gradient descent</center>
 
 {{<img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Gradient_descent.svg" title="" width="100%" line-height="0.5rem">}}
-From <a href="https://commons.wikimedia.org/w/index.php?curid=20569355">Olegalexandrov & Zerodamage, Wikipedia</a>
+From <a href="https://commons.wikimedia.org/w/index.php?curid=20569355" target="_blank">Olegalexandrov & Zerodamage, Wikipedia</a>
 {{</img>}}
 <br>
 <center>Iterative optimization method</center>
@@ -311,7 +311,7 @@ Variation: {{<a "https://arxiv.org/abs/1412.6980" "Adam optimization algorithm">
 ##### <center>Overfitting</center><br>
 
 {{<img src="/img/ml/overfitting.png" title="" width="35%" line-height="0.5rem">}}
-From <a href="https://commons.wikimedia.org/w/index.php?curid=3610704">Chabacano, Wikipedia</a>
+From <a href="https://commons.wikimedia.org/w/index.php?curid=3610704" target="_blank">Chabacano, Wikipedia</a>
 {{</img>}}
 
 <center>Some noise from the data extracted by the model while it does not represent general meaningful structure and has no predictive power</center>
@@ -321,7 +321,7 @@ From <a href="https://commons.wikimedia.org/w/index.php?curid=3610704">Chabacano
 ##### <center>Overfitting: solutions</center><br>
 
 {{<img src="/img/ml/overfitting.png" title="" width="15%" line-height="0.5rem">}}
-From <a href="https://commons.wikimedia.org/w/index.php?curid=3610704">Chabacano, Wikipedia</a>
+From <a href="https://commons.wikimedia.org/w/index.php?curid=3610704" target="_blank">Chabacano, Wikipedia</a>
 {{</img>}}
 <br>
 
@@ -370,7 +370,7 @@ Neural architectures adapted to the type of data\\
 <center>Used for chain structured data (e.g. text)</center>
 
 {{<img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Recurrent_neural_network_unfold.svg" title="" width="%" line-height="0.5rem">}}
-From <a href="https://commons.wikimedia.org/w/index.php?curid=1474927">fdeloche, Wikipedia</a>
+From <a href="https://commons.wikimedia.org/w/index.php?curid=1474927" target="_blank">fdeloche, Wikipedia</a>
 {{</img>}}
 
 *Example:*\\
@@ -451,7 +451,7 @@ Today, we will have a glance at Flux
 #### <center>The {{<a "http://yann.lecun.com/exdb/mnist/" "MNIST">}} database</center>
 <br>
 {{<img src="/img/ml/mnist_nw.png" title="" width="70%" line-height="0.5rem">}}
-Modified from <a href="https://commons.wikimedia.org/w/index.php?curid=64810040">Josef Steppan, Wikimedia</a>
+Modified from <a href="https://commons.wikimedia.org/w/index.php?curid=64810040" target="_blank">Josef Steppan, Wikimedia</a>
 {{</img>}}
 <br>
 
@@ -474,7 +474,7 @@ Labels from 0 to 9 of the actual digits
 #### <center>The {{<a "http://yann.lecun.com/exdb/mnist/" "MNIST">}} database</center>
 <br>
 {{<img src="/img/ml/mnist_nw.png" title="" width="70%" line-height="0.5rem">}}
-Modified from <a href="https://commons.wikimedia.org/w/index.php?curid=64810040">Josef Steppan, Wikimedia</a>
+Modified from <a href="https://commons.wikimedia.org/w/index.php?curid=64810040" target="_blank">Josef Steppan, Wikimedia</a>
 {{</img>}}
 <br>
 
@@ -486,7 +486,7 @@ Modified from <a href="https://commons.wikimedia.org/w/index.php?curid=64810040"
 #### <center>The {{<a "http://yann.lecun.com/exdb/mnist/" "MNIST">}} database</center>
 <br>
 {{<img src="/img/ml/mnist_nw.png" title="" width="70%" line-height="0.5rem">}}
-Modified from <a href="https://commons.wikimedia.org/w/index.php?curid=64810040">Josef Steppan, Wikimedia</a>
+Modified from <a href="https://commons.wikimedia.org/w/index.php?curid=64810040" target="_blank">Josef Steppan, Wikimedia</a>
 {{</img>}}
 <br>
 
