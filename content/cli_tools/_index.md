@@ -18,7 +18,7 @@ custom_theme_compile = true
 
 #### <center>Marie-Hélène Burle</center>
 
-###### <center><training@westgrid.ca></center>
+###### <center>{{<a "mailto:training@westgrid.ca" "training@westgrid.ca">}}</center>
 
 ###### <center>*February 19, 2020*</center>
 
@@ -28,7 +28,7 @@ custom_theme_compile = true
 
 <br>
 
-[![logo](/img/cli_tools/fzf.png)](https://github.com/junegunn/fzf)
+<a href="https://github.com/junegunn/fzf" target="_blank"><img src="/img/cli_tools/fzf.png" alt="logo" /></a>
 
 ---
 
@@ -500,7 +500,7 @@ gcop() {	# search for commit with preview and copy hash
 
 <br>
 
-[![logo](/img/cli_tools/autojump.png)](https://github.com/wting/autojump)
+<a href="https://github.com/wting/autojump" target="_blank"><img src="/img/cli_tools/autojump.png" alt="logo" /></a>
 
 ---
 
@@ -508,7 +508,7 @@ gcop() {	# search for commit with preview and copy hash
 
 <br>
 
-[![logo](/img/cli_tools/ranger.png)](https://github.com/ranger/ranger)
+<a href="https://github.com/ranger/ranger" target="_blank"><img src="/img/cli_tools/ranger.png" alt="logo" /></a>
 
 ---
 
@@ -526,11 +526,11 @@ alias kr='grep -E "^map\ " $HOME/.config/ranger/rc.conf |
 ## Alternatives to ranger
 
 <br>
-Written in C: {{%c%}}[nnn](https://github.com/jarun/nnn){{%/c%}}
+Written in C: {{%c%}}{{<a "https://github.com/jarun/nnn" "nnn">}}{{%/c%}}
 
-In Go: {{%c%}}[lf](https://github.com/gokcehan/lf){{%/c%}} (that's lower case {{%b%}}L{{%/b%}})
+In Go: {{%c%}}{{<a "https://github.com/gokcehan/lf" "lf">}}{{%/c%}} (that's lower case {{%b%}}L{{%/b%}})
 
-And in bash: {{%c%}}[fff](https://github.com/dylanaraps/fff){{%/c%}} (you will have to visit the page to know what the 3 {{%b%}}f{{%/b%}} stand for. I'll just say here that it is a *Very* Fast File-manager)
+And in bash: {{%c%}}{{<a "https://github.com/dylanaraps/fff" "fff">}}{{%/c%}} (you will have to visit the page to know what the 3 {{%b%}}f{{%/b%}} stand for. I'll just say here that it is a *Very* Fast File-manager)
 
 ---
 
