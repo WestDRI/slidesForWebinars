@@ -20,7 +20,7 @@ custom_theme_compile = true
 
 ##### <center>Marie-Hélène Burle</center>
 
-###### <center><training@westgrid.ca></center>
+###### <center>{{<a "mailto:training@westgrid.ca" "training@westgrid.ca">}}</center>
 
 ---
 

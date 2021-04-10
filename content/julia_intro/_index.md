@@ -21,7 +21,7 @@ custom_theme_compile = true
 
 #### <center>Marie-Hélène Burle</center>
 
-###### <center><training@westgrid.ca></center>
+###### <center>{{<a "mailto:training@westgrid.ca" "training@westgrid.ca">}}</center>
 
 ###### <center>*March 04, 2020*</center>
 
@@ -30,7 +30,7 @@ custom_theme_compile = true
 ### <center>Brief history</center>
 <br>
 
-Started in 2009 by Jeff Bezanson, [Stefan Karpinski](https://en.wikipedia.org/wiki/Stefan_Karpinski), [Viral B. Shah](https://en.wikipedia.org/wiki/Viral_B._Shah), and [Alan Edelman](https://en.wikipedia.org/wiki/Alan_Edelman)
+Started in 2009 by Jeff Bezanson, {{<a "https://en.wikipedia.org/wiki/Stefan_Karpinski" "Stefan Karpinski">}}, {{<a "https://en.wikipedia.org/wiki/Viral_B._Shah" "Viral B. Shah">}}, and {{<a "https://en.wikipedia.org/wiki/Alan_Edelman" "Alan Edelman">}}
 
 Launched in 2012 as free and open source software
 
@@ -179,7 +179,7 @@ C-s		forward search
 ### <center>Where to find packages?</center>
 <br>
 
-<center>Easy [search engine](https://pkg.julialang.org/docs/) for registered packages (all on GitHub)</center>
+<center>Easy {{<a "https://pkg.julialang.org/docs/" "search engine">}} for registered packages (all on GitHub)</center>
 
 ---
 
