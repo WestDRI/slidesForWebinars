@@ -103,11 +103,11 @@ Discourse {{<a "https://discourse.julialang.org/" "forum">}}
 
 {{<a "https://stackoverflow.com/tags/julia" "[julia] ">}}tag on Stack Overflow
 
-{{<a "https://app.slack.com/client/T68168MUP/C67910KEH) team (you need to agree to the community code of conduct at slackinvite.julialang.org to receive an invitation" "Slack">}} 
+{{<a "https://app.slack.com/client/T68168MUP/C67910KEH) team (you need to agree to the community code of conduct at slackinvite.julialang.org to receive an invitation" "Slack">}} &nbsp;
 
 {{<a "https://twitter.com/search?q=%23julialang" "#julialang">}} hashtag on Twitter
 
-{{<a "https://www.reddit.com/r/Julia/" "Subreddit">}} 
+{{<a "https://www.reddit.com/r/Julia/" "Subreddit">}} &nbsp;
 
 {{<a "https://gitter.im/JuliaLang/julia" "Gitter">}} channel
 
@@ -126,7 +126,7 @@ Discourse {{<a "https://discourse.julialang.org/" "forum">}}
 
 #### Juno
 
-{{<a "https://junolab.org/" "A Julia IDE">}} built on {{<a "https://atom.io/" built on "Atom">}}
+{{<a "https://junolab.org/" "A Julia IDE">}} built on {{<a "https://atom.io/" "Atom">}}
 <br>
 
 #### Jupyter
