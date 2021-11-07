@@ -64,7 +64,7 @@ Computer languages mostly fall into two categories:
 ### <center>JIT compilation</center>
 <br>
 
-{{<a "https://en.wikipedia.org/wiki/LLVM" "Just-in-time compilation](https://en.wikipedia.org/wiki/Just-in-time_compilation) (JIT) based on [LLVM">}}
+{{<a "https://en.wikipedia.org/wiki/Just-in-time_compilation" "Just-in-time compilation (JIT)">}} based on {{<a "https://en.wikipedia.org/wiki/LLVM" "LLVM">}}
 
 Source code compiled at run time
 
@@ -103,11 +103,11 @@ Discourse {{<a "https://discourse.julialang.org/" "forum">}}
 
 {{<a "https://stackoverflow.com/tags/julia" "[julia] ">}}tag on Stack Overflow
 
-{{<a "https://app.slack.com/client/T68168MUP/C67910KEH) team (you need to agree to the community code of conduct at slackinvite.julialang.org to receive an invitation" "Slack">}}
+{{<a "https://app.slack.com/client/T68168MUP/C67910KEH) team (you need to agree to the community code of conduct at slackinvite.julialang.org to receive an invitation" "Slack">}} 
 
 {{<a "https://twitter.com/search?q=%23julialang" "#julialang">}} hashtag on Twitter
 
-{{<a "https://www.reddit.com/r/Julia/" "Subreddit">}}
+{{<a "https://www.reddit.com/r/Julia/" "Subreddit">}} 
 
 {{<a "https://gitter.im/JuliaLang/julia" "Gitter">}} channel
 
@@ -119,14 +119,14 @@ Discourse {{<a "https://discourse.julialang.org/" "forum">}}
 
 #### Emacs
 
-{{<a "https://github.com/tpapp/julia-repl" "julia-emacs](https://github.com/JuliaEditorSupport/julia-emacs) with [julia-repl">}}<br>
+{{<a "https://github.com/JuliaEditorSupport/julia-emacs" "julia-emacs">}} with {{<a "https://github.com/tpapp/julia-repl" "julia-repl">}}<br>
 {{<a "https://github.com/emacs-ess/ESS" "ESS">}}<br>
 {{<a "http://millejoh.github.io/emacs-ipython-notebook/" "EIN">}} for Jupyter notebooks
 <br>
 
 #### Juno
 
-{{<a "https://atom.io/" "A Julia IDE](https://junolab.org/) built on [Atom">}}
+{{<a "https://junolab.org/" "A Julia IDE">}} built on {{<a "https://atom.io/" built on "Atom">}}
 <br>
 
 #### Jupyter
